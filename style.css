@@ -96,3 +96,10 @@ body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, B
 .hidden { display: none !important; }
 .toast { position: fixed; left: 50%; bottom: 86px; transform: translateX(-50%); background: #25314c; color: white; padding: 12px 16px; border-radius: 999px; box-shadow: var(--shadow); z-index: 100; font-weight: 800; }
 @media (max-width: 680px) { .grid-two, .level-grid { grid-template-columns: 1fr; } .bottom-nav { grid-template-columns: 1fr; } .hero-topline { align-items: flex-start; flex-direction: column; } }
+
+.telegram-summary-card { border: 2px solid rgba(28,176,246,.25); background: linear-gradient(180deg, rgba(28,176,246,.10), var(--card)); }
+.telegram-summary-card.compact { box-shadow: none; margin: 0; padding: 14px; }
+.daily-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+.daily-lines { display: grid; gap: 10px; margin: 10px 0 14px; }
+.daily-lines > div { display: grid; gap: 4px; padding: 10px; border: 1px solid var(--border); border-radius: 14px; background: rgba(128,163,205,.08); }
+.daily-label { color: var(--muted); font-size: .82rem; font-weight: 900; text-transform: uppercase; letter-spacing: .04em; }

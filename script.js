@@ -35876,9 +35876,13 @@ const state = {
   current: 1,
   tab: "learn",
   completed: JSON.parse(localStorage.getItem("completedLessonsByLevel") || "{}"),
+  lastScores: JSON.parse(localStorage.getItem("lastScoresByLevel") || "{}"),
   theme: localStorage.getItem("theme") || "light",
 };
-Object.keys(DATA).forEach(level => { if (!Array.isArray(state.completed[level])) state.completed[level] = []; });
+Object.keys(DATA).forEach(level => {
+  if (!Array.isArray(state.completed[level])) state.completed[level] = [];
+  if (!state.lastScores[level]) state.lastScores[level] = null;
+});
 if (state.level && DATA[state.level]) {
   state.current = Number(localStorage.getItem(`currentLesson_${state.level}`) || 1);
 } else if (state.level && !DATA[state.level]) {
@@ -35897,6 +35901,7 @@ function saveState() {
   if (state.level) localStorage.setItem("currentLevel", state.level);
   if (state.level) localStorage.setItem(`currentLesson_${state.level}`, String(state.current));
   localStorage.setItem("completedLessonsByLevel", JSON.stringify(state.completed));
+  localStorage.setItem("lastScoresByLevel", JSON.stringify(state.lastScores));
   localStorage.setItem("theme", state.theme);
 }
 function setTheme(theme) {
@@ -35943,11 +35948,56 @@ function bindStaticActions() {
   $("#prevBtn").addEventListener("click", () => { if (!state.level) return; state.current = Math.max(1, state.current - 1); state.tab = "learn"; saveState(); setupSelector(); render(); });
   $("#nextBtn").addEventListener("click", () => { if (!state.level) return; state.current = Math.min(getLessons().length, state.current + 1); state.tab = "learn"; saveState(); setupSelector(); render(); });
   $("#lessonSelect").addEventListener("change", e => { if (!state.level) return; state.current = Number(e.target.value); state.tab = "learn"; saveState(); render(); });
+  document.addEventListener("click", async e => {
+    const copyBtn = e.target.closest('[data-copy]');
+    if (copyBtn && !copyBtn.closest('#tabContent')) { await navigator.clipboard?.writeText(copyBtn.dataset.copy); showToast('Copied'); }
+    const openBtn = e.target.closest('[data-open-daily]');
+    if (openBtn && !openBtn.closest('#tabContent')) { const level = openBtn.dataset.openDaily || state.level; const today = getClassOfDay(level); if (today) { state.level = level; state.current = today.id; state.tab = 'learn'; saveState(); setupSelector(); render(); } }
+    const popupBtn = e.target.closest('[data-show-telegram-update]');
+    if (popupBtn && !popupBtn.closest('#tabContent')) showNativeTelegramUpdate(popupBtn.dataset.showTelegramUpdate || state.level);
+  });
 }
 function render() {
   if (!state.level || !DATA[state.level]) { renderLevelChoice(); return; }
   renderLesson();
 }
+
+function getClassOfDay(level) {
+  const lessons = DATA[level] || [];
+  if (!lessons.length) return null;
+  const last = state.lastScores[level];
+  const completed = Array.isArray(state.completed[level]) ? state.completed[level] : [];
+  let nextId = Number(localStorage.getItem(`currentLesson_${level}`) || 1);
+  if (last && Number(last.lessonId)) nextId = Math.min(lessons.length, Number(last.lessonId) + 1);
+  else if (completed.length) nextId = Math.min(lessons.length, Math.max(...completed) + 1);
+  nextId = Math.max(1, Math.min(lessons.length, nextId || 1));
+  return lessons.find(l => l.id === nextId) || lessons[0];
+}
+function getLastScoreLine(level) {
+  const last = state.lastScores[level];
+  if (!last) return "Last score: no practice score saved yet.";
+  return `Last score: ${level} Class ${last.lessonId} — ${last.correct}/${last.total} (${last.percent}%).`;
+}
+function getDailyMessage(level) {
+  const today = getClassOfDay(level);
+  const classLine = today ? `Class of the day: ${level} Class ${today.id} — ${today.title}.` : `Class of the day: choose a class to start.`;
+  return `📩 French practice update\n${getLastScoreLine(level)}\n${classLine}`;
+}
+function renderDailyMessageHTML(level, compact = false) {
+  const today = getClassOfDay(level);
+  const last = state.lastScores[level];
+  const lastText = last ? `${level} Class ${last.lessonId}: ${last.correct}/${last.total} (${last.percent}%)` : "No score saved yet";
+  const todayText = today ? `${level} Class ${today.id}: ${today.title}` : "Choose a class to start";
+  return `<section class="lesson-card telegram-summary-card ${compact ? 'compact' : ''}"><h3 class="section-title"><span>📩</span> Telegram learning update</h3><div class="daily-lines"><div><span class="daily-label">Last score</span><strong>${escapeHtml(lastText)}</strong></div><div><span class="daily-label">Class of the day</span><strong>${escapeHtml(todayText)}</strong></div></div><div class="sentence-actions"><button class="primary-btn" type="button" data-open-daily="${escapeHtml(level)}">Open class of the day</button><button class="ghost-btn" type="button" data-copy="${escapeHtml(getDailyMessage(level))}">Copy update message</button><button class="ghost-btn" type="button" data-show-telegram-update="${escapeHtml(level)}">Show Telegram popup</button></div></section>`;
+}
+function showNativeTelegramUpdate(level) {
+  const message = getDailyMessage(level);
+  if (tg && typeof tg.showPopup === 'function') {
+    try { tg.showPopup({ title: "French class update", message, buttons: [{ type: "ok" }] }); return; } catch (e) {}
+  }
+  alert(message);
+}
+
 function renderLevelChoice() {
   $("#progressLabel").textContent = "Choose A1, A2, B1, B2, C1 or C2";
   $("#lessonTitle").textContent = "Select your French level";
@@ -35961,7 +36011,7 @@ function renderLevelChoice() {
     {code:"C1", name:"Advanced French", desc:"Precise argumentation, synthesis, register, professional discourse, academic style and nuanced interaction."},
     {code:"C2", name:"Mastery French", desc:"Subtle meaning, rhetoric, implicit language, stylistic control, high-level mediation and near-native precision."}
   ];
-  $("#app").innerHTML = `<section class="lesson-card level-choice"><h2>Which level do you want to practise?</h2><p class="muted">Choose one CEFR level. Each level has 50 classes with sentence listening, slow 0.7x audio, tougher choices, spelling support, word-order practice and full scoring.</p><div class="level-grid">${levels.map(level => `<button class="level-card" data-level="${level.code}" type="button"><span class="level-badge">${level.code}</span><strong>${level.name}</strong><span>${level.desc}</span></button>`).join('')}</div></section>`;
+  $("#app").innerHTML = `<section class="lesson-card level-choice"><h2>Which level do you want to practise?</h2><p class="muted">Choose one CEFR level. Each level has 50 classes with sentence listening, slow 0.7x audio, tougher choices, spelling support, word-order practice and full scoring.</p><div class="level-grid">${levels.map(level => `<button class="level-card" data-level="${level.code}" type="button"><span class="level-badge">${level.code}</span><strong>${level.name}</strong><span>${level.desc}</span></button>`).join('')}</div></section><section class="lesson-card"><h3 class="section-title"><span>📬</span> Daily status by level</h3><p class="muted">This is the message the learner sees when opening the app. It uses the last saved practice score on this device and suggests the next class of the day.</p><div class="daily-grid">${levels.map(level => renderDailyMessageHTML(level.code, true)).join('')}</div></section>`;
   $$('[data-level]').forEach(btn => btn.addEventListener('click', () => { state.level = btn.dataset.level; state.current = Number(localStorage.getItem(`currentLesson_${state.level}`) || 1); state.tab = 'learn'; saveState(); setupSelector(); render(); }));
 }
 function renderLesson() {
@@ -35978,6 +36028,7 @@ function renderLesson() {
   $('[data-field="title"]', template).textContent = lesson.title;
   $('[data-field="objective"]', template).textContent = lesson.objective;
   const app = $("#app"); app.innerHTML = ""; app.appendChild(template);
+  app.insertAdjacentHTML('afterbegin', renderDailyMessageHTML(state.level));
   bindTabs(app, lesson);
   renderTab(lesson);
   $("#changeLevelBtn").addEventListener('click', () => { state.level = ''; saveState(); setupSelector(); renderLevelChoice(); });
@@ -36070,7 +36121,7 @@ function renderPractice(lesson) {
   return `<article class="exercise-card"><h3 class="section-title"><span>🎮</span> A. Quick choose</h3><p class="muted">Choose the correct French sentence. The wrong options are similar but include article, conjugation, pronoun or word-choice mistakes.</p>${choiceQuestions.map((q, qi) => `<div class="translation-row"><strong>${qi + 1}. ${escapeHtml(q.en)}</strong><div class="choice-grid">${q.choices.map(choice => `<button class="choice-btn" type="button" data-choice="${escapeHtml(choice)}" data-answer="${escapeHtml(q.answer)}">${escapeHtml(choice)}</button>`).join('')}</div><div class="feedback"></div></div>`).join('')}</article>
   <article class="exercise-card"><h3 class="section-title"><span>✍️</span> B. Fill in the blank</h3><p class="muted">Type the missing French word. If the spelling is wrong, choose the correct form from four very similar options.</p>${fillQuestions.map((q, i) => `<div class="translation-row fill-row"><strong>${i + 1}. ${escapeHtml(q.en)}</strong><div class="french">${escapeHtml(q.blanked)}</div><input type="text" class="fill-input" data-answer="${escapeHtml(q.answer)}" placeholder="Missing word" /><button class="check-btn" type="button" data-check-fill>Check</button><div class="feedback"></div><div class="spelling-options" hidden></div></div>`).join('')}</article>
   <article class="exercise-card"><h3 class="section-title"><span>🧩</span> C. Word order challenge</h3><p class="muted">Translate each English sentence by putting the French words in the correct order. These are practice sentences, not exact copies from the sentence bank.</p>${orderQuestions.map((s, i) => `<div class="translation-row word-order-row" data-order-answer="${escapeHtml(s.fr)}"><strong>${i + 1}. ${escapeHtml(s.en)}</strong><div class="word-bank">${s.tokens.map(token => `<button class="word-chip" type="button" data-word="${escapeHtml(token.word)}" data-token-id="${escapeHtml(token.id)}">${escapeHtml(token.word)}</button>`).join('')}</div><div class="answer-bank"><span class="placeholder">Tap words above to build your answer.</span></div><div class="sentence-actions"><button class="speech-btn" type="button" data-speak="${escapeHtml(s.fr)}" data-rate="0.86">🔊 Listen</button><button class="speech-btn slow-btn" type="button" data-speak="${escapeHtml(s.fr)}" data-rate="0.7">🐢 Slow 0.7x</button><button class="ghost-btn" type="button" data-reset-order>Reset</button><button class="check-btn" type="button" data-check-order>Check sentence</button></div><div class="feedback"></div><div class="answer-reveal">Answer: ${escapeHtml(s.fr)}</div></div>`).join('')}
-  <div class="score-card"><strong>Practice score</strong><p class="muted">The score includes every exercise in this practice section: Quick choose, Fill in the blank, and Word order challenge.</p><div id="practiceScore" class="score-result">Score not checked yet.</div><div class="sentence-actions"><button class="primary-btn" type="button" id="checkPracticeScore">Check full practice score</button><button class="ghost-btn" type="button" id="showAnswers">Show answers</button><button class="ghost-btn" type="button" id="markComplete">Mark class complete</button></div></div></article>
+  <div class="score-card"><strong>Practice score</strong><p class="muted">The score includes every exercise in this practice section: Quick choose, Fill in the blank, and Word order challenge. After checking, the app saves your score and updates the Telegram learning update with the next class of the day.</p><div id="practiceScore" class="score-result">Score not checked yet.</div><div class="sentence-actions"><button class="primary-btn" type="button" id="checkPracticeScore">Check full practice score</button><button class="ghost-btn" type="button" id="showAnswers">Show answers</button><button class="ghost-btn" type="button" id="markComplete">Mark class complete</button></div></div></article>
   <article class="lesson-card"><h3 class="section-title"><span>➡️</span> Next class preview</h3><p>${escapeHtml(lesson.nextPreview || '')}</p></article>`;
 }
 function renderExam(lesson) {
@@ -36080,6 +36131,8 @@ function renderExam(lesson) {
 function bindDynamicActions(root, lesson) {
   $$('[data-speak]', root).forEach(btn => btn.addEventListener('click', () => speakFrench(btn.dataset.speak, Number(btn.dataset.rate || 0.86))));
   $$('[data-copy]', root).forEach(btn => btn.addEventListener('click', async () => { await navigator.clipboard?.writeText(btn.dataset.copy); showToast('Copied'); }));
+  $$('[data-open-daily]', root).forEach(btn => btn.addEventListener('click', () => { const level = btn.dataset.openDaily || state.level; const today = getClassOfDay(level); if (!today) return; state.level = level; state.current = today.id; state.tab = 'learn'; saveState(); setupSelector(); render(); }));
+  $$('[data-show-telegram-update]', root).forEach(btn => btn.addEventListener('click', () => showNativeTelegramUpdate(btn.dataset.showTelegramUpdate || state.level)));
   $$('[data-choice]', root).forEach(btn => btn.addEventListener('click', () => {
     const row = btn.closest('.translation-row'); const buttons = $$('.choice-btn', row); buttons.forEach(b => { b.disabled = true; b.dataset.selected = 'false'; }); btn.dataset.selected = 'true';
     const ok = btn.dataset.choice === btn.dataset.answer; btn.classList.add(ok ? 'correct' : 'wrong'); buttons.find(b => b.dataset.choice === btn.dataset.answer)?.classList.add('correct');
@@ -36111,7 +36164,7 @@ function bindDynamicActions(root, lesson) {
   }));
   $$('[data-reset-order]', root).forEach(btn => btn.addEventListener('click', () => { const row = btn.closest('.word-order-row'); $$('.word-chip', row).forEach(chip => chip.disabled = false); $('.answer-bank', row).innerHTML = '<span class="placeholder">Tap words above to build your answer.</span>'; const feedback = $('.feedback', row); feedback.textContent = ''; feedback.className = 'feedback'; row.dataset.orderCorrect = 'false'; $('.answer-reveal', row)?.classList.remove('show'); }));
   $$('[data-check-order]', root).forEach(btn => btn.addEventListener('click', () => checkWordOrderRow(btn.closest('.word-order-row'), true)));
-  const checkPracticeScore = $('#checkPracticeScore', root); if (checkPracticeScore) checkPracticeScore.addEventListener('click', () => { const { correct, total } = calculatePracticeScore(root); const percent = total ? Math.round((correct / total) * 100) : 0; const box = $('#practiceScore', root); box.textContent = `Score: ${correct} / ${total} (${percent}%)`; box.className = `score-result ${percent >= 80 ? 'ok' : percent >= 50 ? 'mid' : 'no'}`; showToast(`Practice score: ${correct} / ${total}`); });
+  const checkPracticeScore = $('#checkPracticeScore', root); if (checkPracticeScore) checkPracticeScore.addEventListener('click', () => { const { correct, total } = calculatePracticeScore(root); const percent = total ? Math.round((correct / total) * 100) : 0; const box = $('#practiceScore', root); box.textContent = `Score: ${correct} / ${total} (${percent}%)`; box.className = `score-result ${percent >= 80 ? 'ok' : percent >= 50 ? 'mid' : 'no'}`; state.lastScores[state.level] = { lessonId: lesson.id, title: lesson.title, correct, total, percent, date: new Date().toISOString() }; saveState(); const summary = $('.telegram-summary-card'); if (summary && !summary.closest('#tabContent')) summary.outerHTML = renderDailyMessageHTML(state.level); showToast(`Practice score saved: ${correct} / ${total}`); });
   const showAnswers = $('#showAnswers', root); if (showAnswers) showAnswers.addEventListener('click', () => $$('.answer-reveal', root).forEach(a => a.classList.add('show')));
   const markComplete = $('#markComplete', root); if (markComplete) markComplete.addEventListener('click', () => { if (!state.completed[state.level]) state.completed[state.level] = []; if (!state.completed[state.level].includes(lesson.id)) state.completed[state.level].push(lesson.id); saveState(); showToast(`${state.level} Class ${lesson.id} completed`); });
 }
