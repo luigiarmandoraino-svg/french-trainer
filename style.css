@@ -84,6 +84,63 @@ button:active { transform: translateY(1px) scale(0.99); }
 .feedback.no { color: var(--red); }
 .answer-reveal { color: var(--muted); font-size: .94rem; display: none; }
 .answer-reveal.show { display: block; }
+
+.word-bank, .answer-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 11px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+.word-bank { background: rgba(28, 176, 246, .06); }
+.answer-bank {
+  min-height: 54px;
+  align-items: center;
+  background: rgba(88, 204, 2, .07);
+}
+.word-chip, .chosen-chip {
+  border: 2px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 12px;
+  font-weight: 900;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--card);
+  box-shadow: 0 3px 0 rgba(31, 41, 55, .08);
+}
+.word-chip:disabled {
+  opacity: .38;
+  cursor: not-allowed;
+  transform: none;
+}
+.chosen-chip {
+  border-color: rgba(88, 204, 2, .55);
+  background: rgba(88, 204, 2, .16);
+}
+.placeholder {
+  color: var(--muted);
+  font-size: .94rem;
+}
+.score-card {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 18px;
+  border: 2px solid rgba(88, 204, 2, .28);
+  background: rgba(88, 204, 2, .08);
+}
+.score-result {
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 900;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+.score-result.ok { color: var(--green-dark); border-color: var(--green); }
+.score-result.mid { color: #b45309; border-color: #f59e0b; }
+.score-result.no { color: var(--red); border-color: var(--red); }
 .exam-box { white-space: pre-wrap; line-height: 1.5; color: var(--text); background: rgba(127,127,127,.04); padding: 14px; border-radius: 18px; border: 1px dashed var(--border); max-height: 58vh; overflow: auto; }
 .bottom-nav { position: fixed; left: 50%; bottom: 12px; transform: translateX(-50%); width: min(980px, calc(100% - 20px)); display: grid; grid-template-columns: auto 1fr auto; gap: 8px; padding: 10px; background: rgba(255,255,255,.86); border: 1px solid var(--border); border-radius: 22px; box-shadow: 0 12px 34px rgba(31,41,55,.16); backdrop-filter: blur(10px); }
 [data-theme="dark"] .bottom-nav { background: rgba(24,34,52,.88); }

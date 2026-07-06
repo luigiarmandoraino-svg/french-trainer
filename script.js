@@ -4807,13 +4807,102 @@ function blankFrench(sentence) {
   return { blanked, answer: picked.w };
 }
 
+function shuffleArray(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function tokenizeFrenchSentence(sentence) {
+  return String(sentence).trim().split(/\s+/).filter(Boolean);
+}
+
+function makeWordOrderQuestion(sentence, rowIndex) {
+  const tokens = tokenizeFrenchSentence(sentence).map((word, index) => ({
+    word,
+    id: `${rowIndex}-${index}`,
+  }));
+  return shuffleArray(tokens);
+}
+
+function getBuiltSentence(row) {
+  return $$('.chosen-chip', row).map(chip => chip.dataset.word).join(' ');
+}
+
+function checkWordOrderRow(row, revealWrong = true) {
+  const answer = row.dataset.orderAnswer || '';
+  const built = getBuiltSentence(row);
+  const feedback = $('.feedback', row);
+  const answerReveal = $('.answer-reveal', row);
+  const complete = tokenizeFrenchSentence(built).length === tokenizeFrenchSentence(answer).length;
+  const ok = normalizeAnswer(built) === normalizeAnswer(answer);
+
+  if (!built) {
+    feedback.textContent = 'Build the sentence by tapping the French words.';
+    feedback.className = 'feedback no';
+    if (answerReveal) answerReveal.classList.remove('show');
+    return false;
+  }
+
+  if (!complete) {
+    feedback.textContent = 'Almost there. Use all the words before checking.';
+    feedback.className = 'feedback no';
+    if (answerReveal) answerReveal.classList.remove('show');
+    return false;
+  }
+
+  feedback.textContent = ok ? 'Correct!' : 'Not yet. Try changing the order.';
+  feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
+  if (answerReveal) answerReveal.classList.toggle('show', !ok && revealWrong);
+  return ok;
+}
+
+function calculatePracticeScore(root) {
+  let total = 0;
+  let correct = 0;
+
+  $$('.choice-grid', root).forEach(grid => {
+    total++;
+    const row = grid.closest('.translation-row');
+    const feedback = $('.feedback', row);
+    const selected = $('.choice-btn[data-selected="true"]', grid);
+    const ok = selected && selected.dataset.choice === selected.dataset.answer;
+    if (ok) correct++;
+    if (feedback) {
+      feedback.textContent = selected ? (ok ? 'Correct!' : 'Not yet. The correct answer is highlighted.') : 'Not answered yet.';
+      feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
+    }
+  });
+
+  $$('.fill-input', root).forEach(input => {
+    total++;
+    const ok = normalizeAnswer(input.value) === normalizeAnswer(input.dataset.answer);
+    if (ok) correct++;
+    const row = input.closest('.translation-row');
+    const feedback = $('.feedback', row);
+    feedback.textContent = input.value.trim() ? (ok ? 'Correct!' : `Try again. Answer: ${input.dataset.answer}`) : 'Not answered yet.';
+    feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
+  });
+
+  $$('.word-order-row', root).forEach(row => {
+    total++;
+    if (checkWordOrderRow(row, true)) correct++;
+  });
+
+  return { correct, total };
+}
+
 function renderPractice(lesson) {
   const choiceQuestions = lesson.sentences.slice(0, 5).map((s, i) => ({ en: s.en, choices: makeChoices(lesson, i), answer: s.fr }));
   const fillQuestions = lesson.sentences.slice(5, 8).map(s => ({ ...blankFrench(s.fr), en: s.en, full: s.fr }));
+  const orderQuestions = lesson.sentences.map((s, i) => ({ ...s, tokens: makeWordOrderQuestion(s.fr, i) }));
   return `
-    <article class="exercise-card"><h3 class="section-title"><span>🎮</span> A. Quick choose</h3><p class="muted">Choose the correct French translation.</p>${choiceQuestions.map((q, qi) => `<div class="translation-row"><strong>${qi + 1}. ${escapeHtml(q.en)}</strong><div class="choice-grid">${q.choices.map(choice => `<button class="choice-btn" type="button" data-choice="${escapeHtml(choice)}" data-answer="${escapeHtml(q.answer)}">${escapeHtml(choice)}</button>`).join("")}</div></div>`).join("")}</article>
-    <article class="exercise-card"><h3 class="section-title"><span>✍️</span> B. Fill in the blank</h3><p class="muted">Type the missing French word.</p>${fillQuestions.map((q, i) => `<div class="translation-row"><strong>${i + 1}. ${escapeHtml(q.en)}</strong><div class="french">${escapeHtml(q.blanked)}</div><input type="text" class="fill-input" data-answer="${escapeHtml(q.answer)}" placeholder="Missing word" /><button class="check-btn" type="button" data-check-fill>Check</button><div class="feedback"></div></div>`).join("")}</article>
-    <article class="exercise-card"><h3 class="section-title"><span>🏆</span> C. Translation challenge</h3><p class="muted">Translate all 10 English sentences into French. Then check your answers.</p>${lesson.sentences.map((s, i) => `<div class="translation-row"><strong>${i + 1}. ${escapeHtml(s.en)}</strong><textarea data-translate-answer="${escapeHtml(s.fr)}" placeholder="Type the French translation here"></textarea><div class="feedback"></div><div class="answer-reveal">Answer: ${escapeHtml(s.fr)}</div></div>`).join("")}<div class="sentence-actions"><button class="primary-btn" type="button" id="checkTranslations">Check translations</button><button class="ghost-btn" type="button" id="showAnswers">Show answers</button><button class="ghost-btn" type="button" id="markComplete">Mark class complete</button></div></article>`;
+    <article class="exercise-card"><h3 class="section-title"><span>🎮</span> A. Quick choose</h3><p class="muted">Choose the correct French translation. This section counts toward your practice score.</p>${choiceQuestions.map((q, qi) => `<div class="translation-row"><strong>${qi + 1}. ${escapeHtml(q.en)}</strong><div class="choice-grid">${q.choices.map(choice => `<button class="choice-btn" type="button" data-choice="${escapeHtml(choice)}" data-answer="${escapeHtml(q.answer)}">${escapeHtml(choice)}</button>`).join("")}</div><div class="feedback"></div></div>`).join("")}</article>
+    <article class="exercise-card"><h3 class="section-title"><span>✍️</span> B. Fill in the blank</h3><p class="muted">Type the missing French word. This section counts toward your practice score.</p>${fillQuestions.map((q, i) => `<div class="translation-row"><strong>${i + 1}. ${escapeHtml(q.en)}</strong><div class="french">${escapeHtml(q.blanked)}</div><input type="text" class="fill-input" data-answer="${escapeHtml(q.answer)}" placeholder="Missing word" /><button class="check-btn" type="button" data-check-fill>Check</button><div class="feedback"></div></div>`).join("")}</article>
+    <article class="exercise-card"><h3 class="section-title"><span>🧩</span> C. Word order challenge</h3><p class="muted">Translate each English sentence by putting the French words in the correct order. Tap the words to build the sentence.</p>${orderQuestions.map((s, i) => `<div class="translation-row word-order-row" data-order-answer="${escapeHtml(s.fr)}"><strong>${i + 1}. ${escapeHtml(s.en)}</strong><div class="word-bank" aria-label="Available French words">${s.tokens.map(token => `<button class="word-chip" type="button" data-word="${escapeHtml(token.word)}" data-token-id="${escapeHtml(token.id)}">${escapeHtml(token.word)}</button>`).join("")}</div><div class="answer-bank" aria-label="Your French sentence"><span class="placeholder">Tap words above to build your answer.</span></div><div class="sentence-actions"><button class="speech-btn" type="button" data-speak="${escapeHtml(s.fr)}">🔊 Listen</button><button class="ghost-btn" type="button" data-reset-order>Reset</button><button class="check-btn" type="button" data-check-order>Check sentence</button></div><div class="feedback"></div><div class="answer-reveal">Answer: ${escapeHtml(s.fr)}</div></div>`).join("")}<div class="score-card"><strong>Practice score</strong><p class="muted">Your final practice score includes Quick choose, Fill in the blank, and Word order challenge.</p><div id="practiceScore" class="score-result">Score not checked yet.</div><div class="sentence-actions"><button class="primary-btn" type="button" id="checkPracticeScore">Check full practice score</button><button class="ghost-btn" type="button" id="showAnswers">Show answers</button><button class="ghost-btn" type="button" id="markComplete">Mark class complete</button></div></div></article>`;
 }
 
 function renderExam(lesson) {
@@ -4827,15 +4916,26 @@ function bindDynamicActions(root, lesson) {
     await navigator.clipboard?.writeText(btn.dataset.copy);
     showToast('Copied');
   }));
+
   $$('[data-choice]', root).forEach(btn => btn.addEventListener('click', () => {
     const row = btn.closest('.translation-row');
     const buttons = $$('.choice-btn', row);
-    buttons.forEach(b => b.disabled = true);
+    buttons.forEach(b => {
+      b.disabled = true;
+      b.dataset.selected = 'false';
+    });
+    btn.dataset.selected = 'true';
     const ok = btn.dataset.choice === btn.dataset.answer;
     btn.classList.add(ok ? 'correct' : 'wrong');
     buttons.find(b => b.dataset.choice === btn.dataset.answer)?.classList.add('correct');
+    const feedback = $('.feedback', row);
+    if (feedback) {
+      feedback.textContent = ok ? 'Correct!' : 'Not yet. The correct answer is highlighted.';
+      feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
+    }
     vibrate();
   }));
+
   $$('[data-check-fill]', root).forEach(btn => btn.addEventListener('click', () => {
     const row = btn.closest('.translation-row');
     const input = $('.fill-input', row);
@@ -4844,22 +4944,70 @@ function bindDynamicActions(root, lesson) {
     feedback.textContent = ok ? 'Correct!' : `Try again. Answer: ${input.dataset.answer}`;
     feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
   }));
-  const checkTranslations = $('#checkTranslations', root);
-  if (checkTranslations) checkTranslations.addEventListener('click', () => {
-    let correct = 0;
-    $$('[data-translate-answer]', root).forEach(textarea => {
-      const row = textarea.closest('.translation-row');
-      const feedback = $('.feedback', row);
-      const ok = normalizeAnswer(textarea.value) === normalizeAnswer(textarea.dataset.translateAnswer);
-      if (ok) correct++;
-      feedback.textContent = ok ? 'Correct!' : 'Not yet. Compare with the answer.';
-      feedback.className = `feedback ${ok ? 'ok' : 'no'}`;
-      $('.answer-reveal', row).classList.toggle('show', !ok);
+
+  $$('.word-chip', root).forEach(btn => btn.addEventListener('click', () => {
+    const row = btn.closest('.word-order-row');
+    const bank = $('.answer-bank', row);
+    $('.placeholder', bank)?.remove();
+    btn.disabled = true;
+    const chosen = document.createElement('button');
+    chosen.type = 'button';
+    chosen.className = 'chosen-chip';
+    chosen.dataset.word = btn.dataset.word;
+    chosen.dataset.tokenId = btn.dataset.tokenId;
+    chosen.textContent = btn.dataset.word;
+    chosen.title = 'Tap to remove this word';
+    chosen.addEventListener('click', () => {
+      const original = $(`.word-chip[data-token-id="${chosen.dataset.tokenId}"]`, row);
+      if (original) original.disabled = false;
+      chosen.remove();
+      if ($$('.chosen-chip', bank).length === 0) {
+        const placeholder = document.createElement('span');
+        placeholder.className = 'placeholder';
+        placeholder.textContent = 'Tap words above to build your answer.';
+        bank.appendChild(placeholder);
+      }
     });
-    showToast(`Score: ${correct} / ${lesson.sentences.length}`);
+    bank.appendChild(chosen);
+    const feedback = $('.feedback', row);
+    if (feedback) {
+      feedback.textContent = '';
+      feedback.className = 'feedback';
+    }
+    vibrate();
+  }));
+
+  $$('[data-reset-order]', root).forEach(btn => btn.addEventListener('click', () => {
+    const row = btn.closest('.word-order-row');
+    $$('.word-chip', row).forEach(chip => chip.disabled = false);
+    const bank = $('.answer-bank', row);
+    bank.innerHTML = '<span class="placeholder">Tap words above to build your answer.</span>';
+    const feedback = $('.feedback', row);
+    feedback.textContent = '';
+    feedback.className = 'feedback';
+    $('.answer-reveal', row)?.classList.remove('show');
+  }));
+
+  $$('[data-check-order]', root).forEach(btn => btn.addEventListener('click', () => {
+    const row = btn.closest('.word-order-row');
+    checkWordOrderRow(row, true);
+  }));
+
+  const checkPracticeScore = $('#checkPracticeScore', root);
+  if (checkPracticeScore) checkPracticeScore.addEventListener('click', () => {
+    const { correct, total } = calculatePracticeScore(root);
+    const percent = total ? Math.round((correct / total) * 100) : 0;
+    const scoreBox = $('#practiceScore', root);
+    if (scoreBox) {
+      scoreBox.textContent = `Score: ${correct} / ${total} (${percent}%)`;
+      scoreBox.className = `score-result ${percent >= 80 ? 'ok' : percent >= 50 ? 'mid' : 'no'}`;
+    }
+    showToast(`Practice score: ${correct} / ${total}`);
   });
+
   const showAnswers = $('#showAnswers', root);
   if (showAnswers) showAnswers.addEventListener('click', () => $$('.answer-reveal', root).forEach(a => a.classList.add('show')));
+
   const markComplete = $('#markComplete', root);
   if (markComplete) markComplete.addEventListener('click', () => {
     if (!state.completed.includes(lesson.id)) state.completed.push(lesson.id);
