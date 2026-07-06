@@ -493,7 +493,146 @@ function scrollToExercise() {
 function showTips() {
   document.getElementById("tipsCard").scrollIntoView({ behavior: "smooth" });
 }
+/* ===== FORCE TELEGRAM DARK MODE READABILITY FIX ===== */
 
+body.telegram-dark,
+body.telegram-dark * {
+  color: #f8fafc !important;
+}
+
+body.telegram-dark {
+  background: #0f172a !important;
+}
+
+body.telegram-dark .app {
+  background: #0f172a !important;
+}
+
+body.telegram-dark .hero-card,
+body.telegram-dark .rule-card,
+body.telegram-dark .practice-card,
+body.telegram-dark .exercise-card,
+body.telegram-dark .tips-card,
+body.telegram-dark .next-card,
+body.telegram-dark .card {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #334155 !important;
+}
+
+body.telegram-dark .hero-card *,
+body.telegram-dark .rule-card *,
+body.telegram-dark .practice-card *,
+body.telegram-dark .exercise-card *,
+body.telegram-dark .tips-card *,
+body.telegram-dark .next-card *,
+body.telegram-dark .card * {
+  color: #f8fafc !important;
+}
+
+body.telegram-dark .small-label,
+body.telegram-dark .section-kicker,
+body.telegram-dark .lesson-badge,
+body.telegram-dark .instruction,
+body.telegram-dark .rule-english,
+body.telegram-dark .next-card p,
+body.telegram-dark .bottom-nav button,
+body.telegram-dark .bottom-nav button span {
+  color: #cbd5e1 !important;
+}
+
+body.telegram-dark .french,
+body.telegram-dark .rule-french,
+body.telegram-dark #lessonCounter,
+body.telegram-dark .lesson-top h1 {
+  color: #93c5fd !important;
+}
+
+body.telegram-dark .practice-item {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+body.telegram-dark .practice-icon,
+body.telegram-dark .listen-button,
+body.telegram-dark .mini-button {
+  background: #2e1065 !important;
+  color: #ffffff !important;
+}
+
+body.telegram-dark input {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+
+body.telegram-dark input::placeholder {
+  color: #94a3b8 !important;
+}
+
+body.telegram-dark #correctAnswerBox {
+  background: #172554 !important;
+  border-left-color: #60a5fa !important;
+}
+
+body.telegram-dark .bottom-nav {
+  background: #1e293b !important;
+  border-color: #334155 !important;
+}
+
+body.telegram-dark .success-banner,
+body.telegram-dark .success-banner * {
+  color: #ffffff !important;
+}
+
+/* Also protect users whose browser is in dark mode but Telegram class is not applied */
+@media (prefers-color-scheme: dark) {
+  body:not(.telegram-light),
+  body:not(.telegram-light) * {
+    color: #f8fafc !important;
+  }
+
+  body:not(.telegram-light) {
+    background: #0f172a !important;
+  }
+
+  body:not(.telegram-light) .hero-card,
+  body:not(.telegram-light) .rule-card,
+  body:not(.telegram-light) .practice-card,
+  body:not(.telegram-light) .exercise-card,
+  body:not(.telegram-light) .tips-card,
+  body:not(.telegram-light) .next-card,
+  body:not(.telegram-light) .card {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+  }
+
+  body:not(.telegram-light) .french,
+  body:not(.telegram-light) .rule-french,
+  body:not(.telegram-light) #lessonCounter,
+  body:not(.telegram-light) .lesson-top h1 {
+    color: #93c5fd !important;
+  }
+
+  body:not(.telegram-light) .small-label,
+  body:not(.telegram-light) .section-kicker,
+  body:not(.telegram-light) .lesson-badge,
+  body:not(.telegram-light) .instruction,
+  body:not(.telegram-light) .rule-english {
+    color: #cbd5e1 !important;
+  }
+
+  body:not(.telegram-light) input {
+    background: #0f172a !important;
+    color: #f8fafc !important;
+    border-color: #475569 !important;
+  }
+
+  body:not(.telegram-light) .bottom-nav {
+    background: #1e293b !important;
+    border-color: #334155 !important;
+  }
+}
 initTelegramMiniApp();
 applyLessonFromUrl();
 renderLesson();
