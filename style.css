@@ -1,569 +1,499 @@
-:root {
-  --app-bg: #f5f7fb;
-  --card-bg: #ffffff;
-  --soft-card: #f8f7ff;
-  --text-color: #172554;
-  --muted-text: #64748b;
-  --border-color: #e5e7eb;
-  --primary: #635bff;
-  --primary-dark: #4f46e5;
-  --secondary: #64748b;
-  --green: #22c55e;
-  --red: #ef4444;
-  --orange: #f59e0b;
-  --blue-soft: #eef4ff;
-  --purple-soft: #f1efff;
-  --shadow: rgba(15, 23, 42, 0.10);
-  --input-bg: #ffffff;
-}
-
-body.telegram-dark {
-  --app-bg: #0f172a;
-  --card-bg: #1e293b;
-  --soft-card: #172033;
-  --text-color: #f8fafc;
-  --muted-text: #cbd5e1;
-  --border-color: #334155;
-  --primary: #8b5cf6;
-  --primary-dark: #7c3aed;
-  --secondary: #64748b;
-  --green: #22c55e;
-  --red: #f87171;
-  --orange: #fbbf24;
-  --blue-soft: #172554;
-  --purple-soft: #2e1065;
-  --shadow: rgba(0, 0, 0, 0.35);
-  --input-bg: #0f172a;
-}
-
-body.telegram-light {
-  --app-bg: #f5f7fb;
-  --card-bg: #ffffff;
-  --soft-card: #f8f7ff;
-  --text-color: #172554;
-  --muted-text: #64748b;
-  --border-color: #e5e7eb;
-  --primary: #635bff;
-  --primary-dark: #4f46e5;
-  --secondary: #64748b;
-  --green: #22c55e;
-  --red: #ef4444;
-  --orange: #f59e0b;
-  --blue-soft: #eef4ff;
-  --purple-soft: #f1efff;
-  --shadow: rgba(15, 23, 42, 0.10);
-  --input-bg: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--app-bg);
-  color: var(--text-color);
-}
-
-.app {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 18px 18px 105px;
-}
-
-/* Top bar */
-
-.top-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 14px;
-  margin-bottom: 14px;
-}
-
-.icon-button {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  border: none;
-  background: var(--soft-card);
-  color: var(--text-color);
-  font-size: 34px;
-  line-height: 1;
-  padding-bottom: 4px;
-  cursor: pointer;
-}
-
-.lesson-top {
-  text-align: center;
-  flex: 1;
-}
-
-.small-label,
-.section-kicker,
-.lesson-badge {
-  margin: 0 0 4px;
-  color: var(--muted-text);
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-}
-
-.lesson-top h1 {
-  margin: 0;
-  font-size: 1.25rem;
-  color: var(--primary);
-}
-
-.streak-box {
-  min-width: 58px;
-  height: 44px;
-  padding: 0 12px;
-  border-radius: 14px;
-  background: var(--soft-card);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  color: var(--text-color);
-}
-
-/* Progress */
-
-.progress-section {
-  margin-bottom: 16px;
-}
-
-.progress-track {
-  width: 100%;
-  height: 10px;
-  background: var(--border-color);
-  border-radius: 999px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  width: 0%;
-  background: linear-gradient(90deg, #22c55e, #635bff);
-  border-radius: 999px;
-  transition: width 0.3s ease;
-}
-
-/* Cards */
-
-.hero-card,
-.rule-card,
-.practice-card,
-.exercise-card,
-.tips-card,
-.next-card {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 8px 24px var(--shadow);
-  border-radius: 24px;
-  padding: 22px;
-  margin-bottom: 16px;
-}
-
-.hero-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 16px;
-  background:
-    radial-gradient(circle at 90% 20%, rgba(99, 91, 255, 0.18), transparent 28%),
-    var(--card-bg);
-  min-height: 185px;
-}
-
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h2 {
-  margin: 0 0 12px;
-  font-size: 2rem;
-  line-height: 1.08;
-  color: var(--text-color);
-}
-
-.hero-text p {
-  font-size: 1.02rem;
-  line-height: 1.45;
-  color: var(--text-color);
-}
-
-.lesson-badge {
-  color: var(--primary);
-}
-
-.hero-emoji {
-  width: 120px;
-  min-width: 120px;
-  border-radius: 28px;
-  background: var(--purple-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
-}
-
-.section-title-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-
-.section-title-row h3 {
-  margin: 0;
-  font-size: 1.4rem;
-  color: var(--text-color);
-}
-
-.rule-content {
-  background: var(--soft-card);
-  border-radius: 18px;
-  padding: 16px;
-  border: 1px solid var(--border-color);
-}
-
-.rule-french {
-  font-weight: 800;
-  font-size: 1.05rem;
-  color: var(--text-color);
-  margin: 0 0 8px;
-}
-
-.rule-english,
-.instruction,
-.next-card p {
-  color: var(--muted-text);
-  line-height: 1.45;
-}
-
-/* Practice */
-
-.practice-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.practice-item {
-  display: grid;
-  grid-template-columns: 54px 1fr 1fr 52px 36px;
-  align-items: center;
-  gap: 12px;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 18px;
-  padding: 12px;
-}
-
-.practice-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  background: var(--purple-soft);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
-}
-
-.english {
-  margin: 0;
-  color: var(--text-color);
-  font-weight: 700;
-  line-height: 1.35;
-}
-
-.french {
-  margin: 0;
-  color: var(--primary);
-  font-weight: 800;
-  line-height: 1.35;
-}
-
-.listen-button {
-  width: 48px;
-  height: 48px;
-  border-radius: 16px;
-  background: var(--purple-soft);
-  color: var(--primary);
-  border: none;
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-.done-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 2px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: transparent;
-  font-weight: 800;
-}
-
-.done-circle.done {
-  background: rgba(34, 197, 94, 0.16);
-  border-color: rgba(34, 197, 94, 0.25);
-  color: var(--green);
-}
-
-/* Exercise */
-
-.exercise-prompt {
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--text-color);
-  margin: 10px 0 12px;
-}
-
-input {
-  width: 100%;
-  padding: 15px;
-  border-radius: 16px;
-  border: 1px solid var(--border-color);
-  background: var(--input-bg);
-  color: var(--text-color);
-  font-size: 1rem;
-  outline: none;
-}
-
-input::placeholder {
-  color: var(--muted-text);
-}
-
-input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(99, 91, 255, 0.15);
-}
-
-.button-row {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-top: 12px;
-}
-
-button {
-  background: var(--primary);
-  color: #ffffff;
-  border: none;
-  border-radius: 16px;
-  padding: 12px 16px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 800;
-}
-
-button:hover {
-  background: var(--primary-dark);
-}
-
-button.secondary {
-  background: var(--secondary);
-}
-
-button.secondary:hover {
-  filter: brightness(0.95);
-}
-
-.mini-button {
-  padding: 9px 13px;
-  background: var(--purple-soft);
-  color: var(--primary);
-  border-radius: 14px;
-}
-
-#feedback {
-  margin-top: 12px;
-}
-
-.correct {
-  color: var(--green) !important;
-  font-weight: 800;
-}
-
-.almost {
-  color: var(--orange) !important;
-  font-weight: 800;
-}
-
-.wrong {
-  color: var(--red) !important;
-  font-weight: 800;
-}
-
-#correctAnswerBox {
-  margin-top: 12px;
-  padding: 14px;
-  border-left: 5px solid var(--primary);
-  background: var(--soft-card);
-  border-radius: 16px;
-}
-
-#correctAnswerBox p {
-  margin: 0 0 8px;
-  color: var(--text-color);
-}
-
-/* Success banner */
-
-.success-banner {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-  color: white;
-  border-radius: 24px;
-  padding: 18px;
-  margin-bottom: 16px;
-  box-shadow: 0 8px 24px var(--shadow);
-}
-
-.success-icon {
-  font-size: 2.5rem;
-}
-
-.success-banner h3 {
-  margin: 0 0 4px;
-  font-size: 1.4rem;
-}
-
-.success-banner p {
-  margin: 0;
-  color: white;
-}
-
-.lesson-navigation {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.lesson-navigation button {
-  flex: 1;
-}
-
-/* Bottom navigation */
-
-.bottom-nav {
-  position: fixed;
-  left: 50%;
-  bottom: 12px;
-  transform: translateX(-50%);
-  width: min(860px, calc(100% - 24px));
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  box-shadow: 0 10px 30px var(--shadow);
-  border-radius: 24px;
-  padding: 8px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  z-index: 20;
-}
-
-.bottom-nav button {
-  background: transparent;
-  color: var(--muted-text);
-  padding: 8px 4px;
-  border-radius: 16px;
-  font-size: 1.25rem;
-}
-
-.bottom-nav button span {
-  display: block;
-  font-size: 0.72rem;
-  margin-top: 3px;
-  color: var(--muted-text);
-}
-
-.bottom-nav button:hover {
-  background: var(--soft-card);
-}
-
-/* Mobile adjustments */
-
-@media (max-width: 700px) {
-  .app {
-    padding: 14px 14px 105px;
+const lessons = [
+  {
+    number: 10,
+    title: "Possessive Adjectives — My / Your / His / Her",
+    emoji: "📚",
+    why: "They help you talk about your family, your things, your work, and other people’s belongings.",
+    ruleFrench: "En français, le possessif change avec le nom.",
+    ruleEnglish: "In French, possessive adjectives agree with the noun: masculine, feminine, or plural.",
+    practice: [
+      { icon: "📘", en: "My book is on the table.", fr: "Mon livre est sur la table." },
+      { icon: "🚗", en: "My car is red.", fr: "Ma voiture est rouge." },
+      { icon: "👫", en: "My friends speak French.", fr: "Mes amis parlent français." },
+      { icon: "📱", en: "Your phone is here.", fr: "Ton téléphone est ici." },
+      { icon: "🏠", en: "Your house is big.", fr: "Ta maison est grande." },
+      { icon: "🎒", en: "His or her bag is new.", fr: "Son sac est nouveau." }
+    ],
+    exercises: [
+      { en: "My house is small.", fr: "Ma maison est petite." },
+      { en: "Your car is new.", fr: "Ta voiture est nouvelle." },
+      { en: "His or her parents are kind.", fr: "Ses parents sont gentils." },
+      { en: "My children are here.", fr: "Mes enfants sont ici." },
+      { en: "Your brother works today.", fr: "Ton frère travaille aujourd’hui." }
+    ],
+    pronunciationTip: "In mes amis, tes enfants, and ses enfants, the final s sounds like z because of liaison.",
+    commonMistake: "Do not choose mon or ma based on the owner. Choose it based on the noun.",
+    learningAdvice: "Learn nouns together with their possessive adjective: mon livre, ma maison, mes amis.",
+    nextLesson: "Lesson 11 will focus on aller and the near future: I am going to..."
+  },
+  {
+    number: 11,
+    title: "Aller and the Near Future — Going To",
+    emoji: "🚶",
+    why: "Aller means to go, but it also helps you talk about future plans.",
+    ruleFrench: "Pour parler du futur proche, on utilise aller plus un verbe à l’infinitif.",
+    ruleEnglish: "To talk about the near future, use aller + infinitive verb.",
+    practice: [
+      { icon: "🏢", en: "I go to the office.", fr: "Je vais au bureau." },
+      { icon: "🏫", en: "You go to school.", fr: "Tu vas à l’école." },
+      { icon: "🛒", en: "She goes to the market.", fr: "Elle va au marché." },
+      { icon: "🍽️", en: "We go to the restaurant.", fr: "Nous allons au restaurant." },
+      { icon: "🇫🇷", en: "I am going to learn French.", fr: "Je vais apprendre le français." },
+      { icon: "🎬", en: "They are going to watch a film.", fr: "Ils vont regarder un film." }
+    ],
+    exercises: [
+      { en: "I am going to study.", fr: "Je vais étudier." },
+      { en: "We are going to eat.", fr: "Nous allons manger." },
+      { en: "She is going to call her friend.", fr: "Elle va appeler son amie." },
+      { en: "They are going to work tomorrow.", fr: "Ils vont travailler demain." },
+      { en: "Are you going to the office?", fr: "Tu vas au bureau ?" }
+    ],
+    pronunciationTip: "In nous allons, pronounce the liaison: nou-z-allons.",
+    commonMistake: "Do not conjugate the second verb after aller. Say Je vais travailler, not Je vais travaille.",
+    learningAdvice: "Use aller + infinitive to speak quickly about your plans.",
+    nextLesson: "Lesson 12 will focus on prepositions of place: in, on, under, in front of, behind."
+  },
+  {
+    number: 12,
+    title: "Prepositions of Place — In / On / Under",
+    emoji: "📍",
+    why: "They help you explain where something or someone is.",
+    ruleFrench: "Une préposition montre la position d’une personne ou d’une chose.",
+    ruleEnglish: "A preposition shows the position of a person or thing.",
+    practice: [
+      { icon: "📘", en: "The book is on the table.", fr: "Le livre est sur la table." },
+      { icon: "🐱", en: "The cat is under the chair.", fr: "Le chat est sous la chaise." },
+      { icon: "📱", en: "The phone is in the bag.", fr: "Le téléphone est dans le sac." },
+      { icon: "🚗", en: "The car is in front of the house.", fr: "La voiture est devant la maison." },
+      { icon: "🌳", en: "The garden is behind the school.", fr: "Le jardin est derrière l’école." },
+      { icon: "🔑", en: "The keys are on the desk.", fr: "Les clés sont sur le bureau." }
+    ],
+    exercises: [
+      { en: "The phone is on the chair.", fr: "Le téléphone est sur la chaise." },
+      { en: "The cat is in the house.", fr: "Le chat est dans la maison." },
+      { en: "The car is behind the school.", fr: "La voiture est derrière l’école." },
+      { en: "The keys are under the book.", fr: "Les clés sont sous le livre." },
+      { en: "The child is in front of the door.", fr: "L’enfant est devant la porte." }
+    ],
+    pronunciationTip: "The final s in sous is silent. It sounds like sou.",
+    commonMistake: "Do not confuse sur and sous. Sur means on. Sous means under.",
+    learningAdvice: "Practice with objects around you: le téléphone est sur la table, le sac est sous la chaise.",
+    nextLesson: "Lesson 13 will focus on faire, meaning to do or to make."
+  },
+  {
+    number: 13,
+    title: "Faire — To Do / To Make",
+    emoji: "🛠️",
+    why: "Faire is one of the most common French verbs. You need it for daily actions, sports, cooking, shopping, and weather.",
+    ruleFrench: "Le verbe faire veut dire to do ou to make.",
+    ruleEnglish: "Faire means to do or to make, but it is also used in many common expressions.",
+    practice: [
+      { icon: "📝", en: "I do my homework.", fr: "Je fais mes devoirs." },
+      { icon: "🏃", en: "You do sport.", fr: "Tu fais du sport." },
+      { icon: "🎂", en: "He makes a cake.", fr: "Il fait un gâteau." },
+      { icon: "🍳", en: "She cooks.", fr: "Elle fait la cuisine." },
+      { icon: "🛒", en: "We go shopping.", fr: "Nous faisons les courses." },
+      { icon: "🥶", en: "It is cold this morning.", fr: "Il fait froid ce matin." }
+    ],
+    exercises: [
+      { en: "I cook tonight.", fr: "Je fais la cuisine ce soir." },
+      { en: "We do sport on Saturday.", fr: "Nous faisons du sport samedi." },
+      { en: "They make coffee.", fr: "Ils font du café." },
+      { en: "It is hot today.", fr: "Il fait chaud aujourd’hui." },
+      { en: "She pays attention.", fr: "Elle fait attention." }
+    ],
+    pronunciationTip: "Je fais, tu fais, and il fait sound almost the same. The final s and t are silent.",
+    commonMistake: "For weather, use faire. Say Il fait chaud, not Il est chaud.",
+    learningAdvice: "Learn faire expressions as complete blocks: faire du sport, faire la cuisine, faire les courses.",
+    nextLesson: "Lesson 14 will be a short exam covering Lessons 8 to 13."
+  },
+  {
+    number: 14,
+    title: "Short Exam — Review of Lessons 8 to 13",
+    emoji: "🧪",
+    why: "Every 7 lessons, you stop and check if you can actively use the grammar.",
+    ruleFrench: "Aujourd’hui, c’est une révision.",
+    ruleEnglish: "Today is a review exam covering adjective agreement, avoir, possessives, aller, prepositions, and faire.",
+    practice: [
+      { icon: "🏠", en: "A small house.", fr: "Une petite maison." },
+      { icon: "🍽️", en: "I am hungry.", fr: "J’ai faim." },
+      { icon: "📱", en: "My phone.", fr: "Mon téléphone." },
+      { icon: "🚶", en: "I am going to leave.", fr: "Je vais partir." },
+      { icon: "⬇️", en: "Under the table.", fr: "Sous la table." },
+      { icon: "🥶", en: "It is cold.", fr: "Il fait froid." }
+    ],
+    exercises: [
+      { en: "I have a new phone.", fr: "J’ai un nouveau téléphone." },
+      { en: "My house is small.", fr: "Ma maison est petite." },
+      { en: "We are going to eat.", fr: "Nous allons manger." },
+      { en: "The book is on the table.", fr: "Le livre est sur la table." },
+      { en: "It is hot today.", fr: "Il fait chaud aujourd’hui." },
+      { en: "She does the shopping.", fr: "Elle fait les courses." }
+    ],
+    pronunciationTip: "Use the listening buttons to review old pronunciation patterns.",
+    commonMistake: "Most review mistakes come from forgetting agreement or conjugating the second verb.",
+    learningAdvice: "Repeat the exam twice: first without help, then with listening.",
+    nextLesson: "Lesson 15 will focus on pouvoir, meaning can or to be able to."
+  },
+  {
+    number: 15,
+    title: "Pouvoir — Can / To Be Able To",
+    emoji: "💪",
+    why: "Pouvoir helps you say what you can do, ask for help, and make simple requests.",
+    ruleFrench: "Après pouvoir, le deuxième verbe reste à l’infinitif.",
+    ruleEnglish: "After pouvoir, the second verb stays in the infinitive form.",
+    practice: [
+      { icon: "🇫🇷", en: "I can speak French.", fr: "Je peux parler français." },
+      { icon: "🤝", en: "Can you help me?", fr: "Tu peux m’aider ?" },
+      { icon: "📅", en: "He can come tomorrow.", fr: "Il peut venir demain." },
+      { icon: "🚪", en: "She can open the door.", fr: "Elle peut ouvrir la porte." },
+      { icon: "▶️", en: "We can start.", fr: "Nous pouvons commencer." },
+      { icon: "✅", en: "They can finish the work.", fr: "Ils peuvent finir le travail." }
+    ],
+    exercises: [
+      { en: "I can help you.", fr: "Je peux t’aider." },
+      { en: "We can leave now.", fr: "Nous pouvons partir maintenant." },
+      { en: "She cannot come today.", fr: "Elle ne peut pas venir aujourd’hui." },
+      { en: "Can you open the door?", fr: "Tu peux ouvrir la porte ?" },
+      { en: "They can finish tomorrow.", fr: "Ils peuvent finir demain." }
+    ],
+    pronunciationTip: "Peux and peut sound the same. The final x and t are silent.",
+    commonMistake: "Do not conjugate the second verb after pouvoir. Say Je peux parler, not Je peux parle.",
+    learningAdvice: "Use pouvoir when asking for help: Tu peux m’aider ? Vous pouvez répéter ?",
+    nextLesson: "Lesson 16 will focus on vouloir, meaning to want and would like."
+  },
+  {
+    number: 16,
+    title: "Vouloir — To Want / Would Like",
+    emoji: "☕",
+    why: "Vouloir helps you say what you want and make polite requests.",
+    ruleFrench: "Après vouloir, le deuxième verbe reste à l’infinitif.",
+    ruleEnglish: "After vouloir, the second verb stays in the infinitive form. For polite requests, use je voudrais.",
+    practice: [
+      { icon: "🇫🇷", en: "I want to learn French.", fr: "Je veux apprendre le français." },
+      { icon: "☕", en: "Do you want a coffee?", fr: "Tu veux un café ?" },
+      { icon: "🇷🇼", en: "She wants to visit Rwanda.", fr: "Elle veut visiter le Rwanda." },
+      { icon: "⏰", en: "We want to leave early.", fr: "Nous voulons partir tôt." },
+      { icon: "🎬", en: "They want to watch a film.", fr: "Ils veulent regarder un film." },
+      { icon: "💧", en: "I would like some water, please.", fr: "Je voudrais de l’eau, s’il vous plaît." }
+    ],
+    exercises: [
+      { en: "I want to speak French.", fr: "Je veux parler français." },
+      { en: "We want to visit Italy.", fr: "Nous voulons visiter l’Italie." },
+      { en: "She does not want coffee.", fr: "Elle ne veut pas de café." },
+      { en: "I would like a tea, please.", fr: "Je voudrais un thé, s’il vous plaît." },
+      { en: "Do you want to eat now?", fr: "Tu veux manger maintenant ?" }
+    ],
+    pronunciationTip: "Veux and veut sound the same. The final x and t are silent.",
+    commonMistake: "Je veux is correct but direct. In restaurants or shops, je voudrais is more polite.",
+    learningAdvice: "Memorize je voudrais as a complete phrase. It is very useful when ordering food or asking for something.",
+    nextLesson: "Lesson 17 will focus on devoir, meaning must or to have to."
   }
+];
 
-  .hero-card {
-    min-height: auto;
-    padding: 20px;
-  }
+let currentLessonIndex = Number(localStorage.getItem("currentLessonIndex")) || 0;
+let currentExerciseIndex = Number(localStorage.getItem("currentExerciseIndex")) || 0;
+let score = Number(localStorage.getItem("score")) || 0;
+let attempts = Number(localStorage.getItem("attempts")) || 0;
 
-  .hero-text h2 {
-    font-size: 1.65rem;
-  }
+function initTelegramMiniApp() {
+  if (window.Telegram && window.Telegram.WebApp) {
+    const tg = window.Telegram.WebApp;
 
-  .hero-emoji {
-    width: 88px;
-    min-width: 88px;
-    font-size: 3rem;
-  }
+    tg.ready();
+    tg.expand();
 
-  .practice-item {
-    grid-template-columns: 46px 1fr 1fr 44px 30px;
-    gap: 8px;
-    padding: 10px;
-  }
+    document.body.classList.add("telegram-mini-app");
 
-  .practice-icon {
-    width: 46px;
-    height: 46px;
-    font-size: 1.45rem;
-  }
+    if (tg.colorScheme === "dark") {
+      document.body.classList.add("telegram-dark");
+      document.body.classList.remove("telegram-light");
+    } else {
+      document.body.classList.add("telegram-light");
+      document.body.classList.remove("telegram-dark");
+    }
 
-  .listen-button {
-    width: 42px;
-    height: 42px;
-  }
+    const closeButton = document.getElementById("closeButton");
+    closeButton.addEventListener("click", function () {
+      tg.close();
+    });
 
-  .english,
-  .french {
-    font-size: 0.95rem;
+    tg.onEvent("themeChanged", function () {
+      if (tg.colorScheme === "dark") {
+        document.body.classList.add("telegram-dark");
+        document.body.classList.remove("telegram-light");
+      } else {
+        document.body.classList.add("telegram-light");
+        document.body.classList.remove("telegram-dark");
+      }
+    });
+  } else {
+    document.body.classList.add("telegram-light");
+
+    const closeButton = document.getElementById("closeButton");
+    closeButton.style.visibility = "hidden";
   }
 }
 
-@media (max-width: 480px) {
-  .hero-card {
-    flex-direction: column;
-  }
+function getLessonFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const lessonNumber = Number(params.get("lesson"));
 
-  .hero-emoji {
-    width: 100%;
-    height: 95px;
-  }
+  if (!lessonNumber) return null;
 
-  .practice-item {
-    grid-template-columns: 42px 1fr 42px 28px;
-  }
+  const index = lessons.findIndex((lesson) => lesson.number === lessonNumber);
+  return index >= 0 ? index : null;
+}
 
-  .practice-item .french {
-    grid-column: 2 / 3;
-  }
+function applyLessonFromUrl() {
+  const lessonIndexFromUrl = getLessonFromUrl();
 
-  .english {
-    font-size: 0.92rem;
-  }
-
-  .french {
-    font-size: 0.95rem;
-  }
-
-  .lesson-navigation {
-    flex-direction: column;
+  if (lessonIndexFromUrl !== null) {
+    currentLessonIndex = lessonIndexFromUrl;
+    currentExerciseIndex = 0;
+    localStorage.setItem("currentLessonIndex", currentLessonIndex);
+    localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
   }
 }
+
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .trim()
+    .replace(/[’']/g, "'")
+    .replace(/[?.!,]/g, "")
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function speakFrench(text, itemId) {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "fr-FR";
+  utterance.rate = 0.85;
+
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
+
+  if (itemId) {
+    const circle = document.getElementById(itemId);
+    if (circle) {
+      circle.classList.add("done");
+      circle.textContent = "✓";
+    }
+  }
+}
+
+function renderLesson() {
+  const lesson = lessons[currentLessonIndex];
+
+  document.getElementById("lessonCounter").textContent = `Lesson ${lesson.number}`;
+  document.getElementById("lessonTitle").textContent = lesson.title;
+  document.getElementById("lessonWhy").textContent = lesson.why;
+  document.getElementById("ruleFrench").textContent = lesson.ruleFrench;
+  document.getElementById("ruleEnglish").textContent = lesson.ruleEnglish;
+  document.getElementById("pronunciationTip").textContent = lesson.pronunciationTip;
+  document.getElementById("commonMistake").textContent = lesson.commonMistake;
+  document.getElementById("learningAdvice").textContent = lesson.learningAdvice;
+  document.getElementById("nextLesson").textContent = lesson.nextLesson;
+  document.getElementById("heroEmoji").textContent = lesson.emoji || "🇫🇷";
+
+  document.getElementById("streakNumber").textContent = getStreak();
+
+  const progressPercentage = ((currentLessonIndex + 1) / lessons.length) * 100;
+  document.getElementById("progressFill").style.width = `${progressPercentage}%`;
+
+  const practiceList = document.getElementById("practiceList");
+  practiceList.innerHTML = "";
+
+  lesson.practice.forEach((item, index) => {
+    const itemId = `done-${lesson.number}-${index}`;
+
+    const div = document.createElement("div");
+    div.className = "practice-item";
+
+    div.innerHTML = `
+      <div class="practice-icon">${item.icon || "🇫🇷"}</div>
+      <p class="english">${item.en}</p>
+      <p class="french">${item.fr}</p>
+      <button class="listen-button" type="button" aria-label="Listen">🔊</button>
+      <div class="done-circle" id="${itemId}"></div>
+    `;
+
+    const listenButton = div.querySelector(".listen-button");
+    listenButton.addEventListener("click", function () {
+      speakFrench(item.fr, itemId);
+    });
+
+    practiceList.appendChild(div);
+  });
+
+  renderExercise();
+  updateScore();
+}
+
+function renderExercise() {
+  const lesson = lessons[currentLessonIndex];
+  const exercise = lesson.exercises[currentExerciseIndex % lesson.exercises.length];
+
+  document.getElementById("exerciseEnglish").textContent = exercise.en;
+  document.getElementById("answerInput").value = "";
+  document.getElementById("feedback").textContent = "";
+  document.getElementById("feedback").className = "";
+  document.getElementById("correctAnswerBox").innerHTML = "";
+}
+
+function checkAnswer() {
+  const lesson = lessons[currentLessonIndex];
+  const exercise = lesson.exercises[currentExerciseIndex % lesson.exercises.length];
+
+  const userAnswer = document.getElementById("answerInput").value;
+  const correctAnswer = exercise.fr;
+
+  const normalizedUser = normalize(userAnswer);
+  const normalizedCorrect = normalize(correctAnswer);
+
+  attempts++;
+
+  const feedback = document.getElementById("feedback");
+  const correctAnswerBox = document.getElementById("correctAnswerBox");
+
+  if (normalizedUser === normalizedCorrect) {
+    score++;
+    feedback.className = "correct";
+    feedback.textContent = "Correct! Très bien.";
+    updateStreak();
+  } else if (isAlmostCorrect(normalizedUser, normalizedCorrect)) {
+    score += 0.5;
+    feedback.className = "almost";
+    feedback.textContent = "Almost correct. Check accents, word order, or small missing words.";
+  } else {
+    feedback.className = "wrong";
+    feedback.textContent = "Not yet. Compare your answer with the correct sentence.";
+  }
+
+  correctAnswerBox.innerHTML = `
+    <p><strong>Correct answer:</strong></p>
+    <p class="french">${correctAnswer}</p>
+    <button id="listenCorrectAnswer" type="button">Listen</button>
+  `;
+
+  document.getElementById("listenCorrectAnswer").addEventListener("click", function () {
+    speakFrench(correctAnswer);
+  });
+
+  localStorage.setItem("score", score);
+  localStorage.setItem("attempts", attempts);
+
+  updateScore();
+}
+
+function isAlmostCorrect(user, correct) {
+  const userWords = user.split(" ").filter(Boolean);
+  const correctWords = correct.split(" ").filter(Boolean);
+
+  let matchingWords = 0;
+
+  userWords.forEach((word) => {
+    if (correctWords.includes(word)) {
+      matchingWords++;
+    }
+  });
+
+  return matchingWords >= Math.max(1, correctWords.length - 2);
+}
+
+function nextExercise() {
+  const lesson = lessons[currentLessonIndex];
+  currentExerciseIndex = (currentExerciseIndex + 1) % lesson.exercises.length;
+
+  localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+  renderExercise();
+}
+
+function nextLessonButton() {
+  if (currentLessonIndex < lessons.length - 1) {
+    currentLessonIndex++;
+    currentExerciseIndex = 0;
+
+    localStorage.setItem("currentLessonIndex", currentLessonIndex);
+    localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+
+    renderLesson();
+    scrollToTop();
+  }
+}
+
+function previousLesson() {
+  if (currentLessonIndex > 0) {
+    currentLessonIndex--;
+    currentExerciseIndex = 0;
+
+    localStorage.setItem("currentLessonIndex", currentLessonIndex);
+    localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+
+    renderLesson();
+    scrollToTop();
+  }
+}
+
+function updateScore() {
+  const scoreText = `Score: ${score} / ${attempts}`;
+  const existingScore = document.getElementById("scoreDisplay");
+
+  if (existingScore) {
+    existingScore.textContent = scoreText;
+  }
+}
+
+function getStreak() {
+  return Number(localStorage.getItem("streak")) || 1;
+}
+
+function updateStreak() {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastCorrectDate = localStorage.getItem("lastCorrectDate");
+
+  if (lastCorrectDate !== today) {
+    const newStreak = getStreak() + 1;
+    localStorage.setItem("streak", newStreak);
+    localStorage.setItem("lastCorrectDate", today);
+    document.getElementById("streakNumber").textContent = newStreak;
+  }
+}
+
+function resetProgress() {
+  score = 0;
+  attempts = 0;
+  currentLessonIndex = 0;
+  currentExerciseIndex = 0;
+
+  localStorage.setItem("score", score);
+  localStorage.setItem("attempts", attempts);
+  localStorage.setItem("currentLessonIndex", currentLessonIndex);
+  localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+  localStorage.setItem("streak", 1);
+  localStorage.removeItem("lastCorrectDate");
+
+  renderLesson();
+  scrollToTop();
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollToPractice() {
+  document.querySelector(".practice-card").scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToExercise() {
+  document.querySelector(".exercise-card").scrollIntoView({ behavior: "smooth" });
+}
+
+function showTips() {
+  document.getElementById("tipsCard").scrollIntoView({ behavior: "smooth" });
+}
+
+initTelegramMiniApp();
+applyLessonFromUrl();
+renderLesson();
