@@ -2,16 +2,17 @@ const lessons = [
   {
     number: 10,
     title: "Possessive Adjectives — My / Your / His / Her",
-    why: "Today we are learning possessive adjectives because they help you talk about your family, your things, your work, and other people’s belongings.",
+    emoji: "📚",
+    why: "They help you talk about your family, your things, your work, and other people’s belongings.",
     ruleFrench: "En français, le possessif change avec le nom.",
     ruleEnglish: "In French, possessive adjectives agree with the noun: masculine, feminine, or plural.",
     practice: [
-      { en: "My book is on the table.", fr: "Mon livre est sur la table." },
-      { en: "My car is red.", fr: "Ma voiture est rouge." },
-      { en: "My friends speak French.", fr: "Mes amis parlent français." },
-      { en: "Your phone is here.", fr: "Ton téléphone est ici." },
-      { en: "Your house is big.", fr: "Ta maison est grande." },
-      { en: "His or her children are at school.", fr: "Ses enfants sont à l’école." }
+      { icon: "📘", en: "My book is on the table.", fr: "Mon livre est sur la table." },
+      { icon: "🚗", en: "My car is red.", fr: "Ma voiture est rouge." },
+      { icon: "👫", en: "My friends speak French.", fr: "Mes amis parlent français." },
+      { icon: "📱", en: "Your phone is here.", fr: "Ton téléphone est ici." },
+      { icon: "🏠", en: "Your house is big.", fr: "Ta maison est grande." },
+      { icon: "🎒", en: "His or her bag is new.", fr: "Son sac est nouveau." }
     ],
     exercises: [
       { en: "My house is small.", fr: "Ma maison est petite." },
@@ -28,16 +29,17 @@ const lessons = [
   {
     number: 11,
     title: "Aller and the Near Future — Going To",
-    why: "Today we are learning aller because it means to go and also helps you talk about future plans.",
+    emoji: "🚶",
+    why: "Aller means to go, but it also helps you talk about future plans.",
     ruleFrench: "Pour parler du futur proche, on utilise aller plus un verbe à l’infinitif.",
     ruleEnglish: "To talk about the near future, use aller + infinitive verb.",
     practice: [
-      { en: "I go to the office.", fr: "Je vais au bureau." },
-      { en: "You go to school.", fr: "Tu vas à l’école." },
-      { en: "She goes to the market.", fr: "Elle va au marché." },
-      { en: "We go to the restaurant.", fr: "Nous allons au restaurant." },
-      { en: "I am going to learn French.", fr: "Je vais apprendre le français." },
-      { en: "They are going to watch a film.", fr: "Ils vont regarder un film." }
+      { icon: "🏢", en: "I go to the office.", fr: "Je vais au bureau." },
+      { icon: "🏫", en: "You go to school.", fr: "Tu vas à l’école." },
+      { icon: "🛒", en: "She goes to the market.", fr: "Elle va au marché." },
+      { icon: "🍽️", en: "We go to the restaurant.", fr: "Nous allons au restaurant." },
+      { icon: "🇫🇷", en: "I am going to learn French.", fr: "Je vais apprendre le français." },
+      { icon: "🎬", en: "They are going to watch a film.", fr: "Ils vont regarder un film." }
     ],
     exercises: [
       { en: "I am going to study.", fr: "Je vais étudier." },
@@ -54,16 +56,17 @@ const lessons = [
   {
     number: 12,
     title: "Prepositions of Place — In / On / Under",
-    why: "Today we are learning prepositions of place because they help you explain where something or someone is.",
+    emoji: "📍",
+    why: "They help you explain where something or someone is.",
     ruleFrench: "Une préposition montre la position d’une personne ou d’une chose.",
     ruleEnglish: "A preposition shows the position of a person or thing.",
     practice: [
-      { en: "The book is on the table.", fr: "Le livre est sur la table." },
-      { en: "The cat is under the chair.", fr: "Le chat est sous la chaise." },
-      { en: "The phone is in the bag.", fr: "Le téléphone est dans le sac." },
-      { en: "The car is in front of the house.", fr: "La voiture est devant la maison." },
-      { en: "The garden is behind the school.", fr: "Le jardin est derrière l’école." },
-      { en: "The keys are on the desk.", fr: "Les clés sont sur le bureau." }
+      { icon: "📘", en: "The book is on the table.", fr: "Le livre est sur la table." },
+      { icon: "🐱", en: "The cat is under the chair.", fr: "Le chat est sous la chaise." },
+      { icon: "📱", en: "The phone is in the bag.", fr: "Le téléphone est dans le sac." },
+      { icon: "🚗", en: "The car is in front of the house.", fr: "La voiture est devant la maison." },
+      { icon: "🌳", en: "The garden is behind the school.", fr: "Le jardin est derrière l’école." },
+      { icon: "🔑", en: "The keys are on the desk.", fr: "Les clés sont sur le bureau." }
     ],
     exercises: [
       { en: "The phone is on the chair.", fr: "Le téléphone est sur la chaise." },
@@ -80,16 +83,17 @@ const lessons = [
   {
     number: 13,
     title: "Faire — To Do / To Make",
-    why: "Today we are learning faire because it is one of the most common French verbs. You need it for daily actions, sports, cooking, shopping, and weather.",
+    emoji: "🛠️",
+    why: "Faire is one of the most common French verbs. You need it for daily actions, sports, cooking, shopping, and weather.",
     ruleFrench: "Le verbe faire veut dire to do ou to make.",
     ruleEnglish: "Faire means to do or to make, but it is also used in many common expressions.",
     practice: [
-      { en: "I do my homework.", fr: "Je fais mes devoirs." },
-      { en: "You do sport.", fr: "Tu fais du sport." },
-      { en: "He makes a cake.", fr: "Il fait un gâteau." },
-      { en: "She cooks.", fr: "Elle fait la cuisine." },
-      { en: "We go shopping.", fr: "Nous faisons les courses." },
-      { en: "It is cold this morning.", fr: "Il fait froid ce matin." }
+      { icon: "📝", en: "I do my homework.", fr: "Je fais mes devoirs." },
+      { icon: "🏃", en: "You do sport.", fr: "Tu fais du sport." },
+      { icon: "🎂", en: "He makes a cake.", fr: "Il fait un gâteau." },
+      { icon: "🍳", en: "She cooks.", fr: "Elle fait la cuisine." },
+      { icon: "🛒", en: "We go shopping.", fr: "Nous faisons les courses." },
+      { icon: "🥶", en: "It is cold this morning.", fr: "Il fait froid ce matin." }
     ],
     exercises: [
       { en: "I cook tonight.", fr: "Je fais la cuisine ce soir." },
@@ -106,16 +110,17 @@ const lessons = [
   {
     number: 14,
     title: "Short Exam — Review of Lessons 8 to 13",
-    why: "Today we are reviewing because every 7 lessons you need to stop and check if you can use the grammar actively.",
+    emoji: "🧪",
+    why: "Every 7 lessons, you stop and check if you can actively use the grammar.",
     ruleFrench: "Aujourd’hui, c’est une révision.",
     ruleEnglish: "Today is a review exam covering adjective agreement, avoir, possessives, aller, prepositions, and faire.",
     practice: [
-      { en: "A small house.", fr: "Une petite maison." },
-      { en: "I am hungry.", fr: "J’ai faim." },
-      { en: "My phone.", fr: "Mon téléphone." },
-      { en: "I am going to leave.", fr: "Je vais partir." },
-      { en: "Under the table.", fr: "Sous la table." },
-      { en: "It is cold.", fr: "Il fait froid." }
+      { icon: "🏠", en: "A small house.", fr: "Une petite maison." },
+      { icon: "🍽️", en: "I am hungry.", fr: "J’ai faim." },
+      { icon: "📱", en: "My phone.", fr: "Mon téléphone." },
+      { icon: "🚶", en: "I am going to leave.", fr: "Je vais partir." },
+      { icon: "⬇️", en: "Under the table.", fr: "Sous la table." },
+      { icon: "🥶", en: "It is cold.", fr: "Il fait froid." }
     ],
     exercises: [
       { en: "I have a new phone.", fr: "J’ai un nouveau téléphone." },
@@ -126,23 +131,24 @@ const lessons = [
       { en: "She does the shopping.", fr: "Elle fait les courses." }
     ],
     pronunciationTip: "Use the listening buttons to review old pronunciation patterns.",
-    commonMistake: "During review, do not rush. Most mistakes come from forgetting agreement or conjugating the second verb.",
+    commonMistake: "Most review mistakes come from forgetting agreement or conjugating the second verb.",
     learningAdvice: "Repeat the exam twice: first without help, then with listening.",
     nextLesson: "Lesson 15 will focus on pouvoir, meaning can or to be able to."
   },
   {
     number: 15,
     title: "Pouvoir — Can / To Be Able To",
-    why: "Today we are learning pouvoir because it helps you say what you can do, ask for help, and make simple requests.",
+    emoji: "💪",
+    why: "Pouvoir helps you say what you can do, ask for help, and make simple requests.",
     ruleFrench: "Après pouvoir, le deuxième verbe reste à l’infinitif.",
     ruleEnglish: "After pouvoir, the second verb stays in the infinitive form.",
     practice: [
-      { en: "I can speak French.", fr: "Je peux parler français." },
-      { en: "Can you help me?", fr: "Tu peux m’aider ?" },
-      { en: "He can come tomorrow.", fr: "Il peut venir demain." },
-      { en: "She can open the door.", fr: "Elle peut ouvrir la porte." },
-      { en: "We can start.", fr: "Nous pouvons commencer." },
-      { en: "They can finish the work.", fr: "Ils peuvent finir le travail." }
+      { icon: "🇫🇷", en: "I can speak French.", fr: "Je peux parler français." },
+      { icon: "🤝", en: "Can you help me?", fr: "Tu peux m’aider ?" },
+      { icon: "📅", en: "He can come tomorrow.", fr: "Il peut venir demain." },
+      { icon: "🚪", en: "She can open the door.", fr: "Elle peut ouvrir la porte." },
+      { icon: "▶️", en: "We can start.", fr: "Nous pouvons commencer." },
+      { icon: "✅", en: "They can finish the work.", fr: "Ils peuvent finir le travail." }
     ],
     exercises: [
       { en: "I can help you.", fr: "Je peux t’aider." },
@@ -159,16 +165,17 @@ const lessons = [
   {
     number: 16,
     title: "Vouloir — To Want / Would Like",
-    why: "Today we are learning vouloir because it helps you say what you want and make polite requests.",
+    emoji: "☕",
+    why: "Vouloir helps you say what you want and make polite requests.",
     ruleFrench: "Après vouloir, le deuxième verbe reste à l’infinitif.",
     ruleEnglish: "After vouloir, the second verb stays in the infinitive form. For polite requests, use je voudrais.",
     practice: [
-      { en: "I want to learn French.", fr: "Je veux apprendre le français." },
-      { en: "Do you want a coffee?", fr: "Tu veux un café ?" },
-      { en: "She wants to visit Rwanda.", fr: "Elle veut visiter le Rwanda." },
-      { en: "We want to leave early.", fr: "Nous voulons partir tôt." },
-      { en: "They want to watch a film.", fr: "Ils veulent regarder un film." },
-      { en: "I would like some water, please.", fr: "Je voudrais de l’eau, s’il vous plaît." }
+      { icon: "🇫🇷", en: "I want to learn French.", fr: "Je veux apprendre le français." },
+      { icon: "☕", en: "Do you want a coffee?", fr: "Tu veux un café ?" },
+      { icon: "🇷🇼", en: "She wants to visit Rwanda.", fr: "Elle veut visiter le Rwanda." },
+      { icon: "⏰", en: "We want to leave early.", fr: "Nous voulons partir tôt." },
+      { icon: "🎬", en: "They want to watch a film.", fr: "Ils veulent regarder un film." },
+      { icon: "💧", en: "I would like some water, please.", fr: "Je voudrais de l’eau, s’il vous plaît." }
     ],
     exercises: [
       { en: "I want to speak French.", fr: "Je veux parler français." },
@@ -189,6 +196,70 @@ let currentExerciseIndex = Number(localStorage.getItem("currentExerciseIndex")) 
 let score = Number(localStorage.getItem("score")) || 0;
 let attempts = Number(localStorage.getItem("attempts")) || 0;
 
+function initTelegramMiniApp() {
+  if (window.Telegram && window.Telegram.WebApp) {
+    const tg = window.Telegram.WebApp;
+
+    tg.ready();
+    tg.expand();
+
+    document.body.classList.add("telegram-mini-app");
+
+    if (tg.colorScheme === "dark") {
+      document.body.classList.add("telegram-dark");
+      document.body.classList.remove("telegram-light");
+    } else {
+      document.body.classList.add("telegram-light");
+      document.body.classList.remove("telegram-dark");
+    }
+
+    const closeButton = document.getElementById("closeButton");
+    if (closeButton) {
+      closeButton.addEventListener("click", function () {
+        tg.close();
+      });
+    }
+
+    tg.onEvent("themeChanged", function () {
+      if (tg.colorScheme === "dark") {
+        document.body.classList.add("telegram-dark");
+        document.body.classList.remove("telegram-light");
+      } else {
+        document.body.classList.add("telegram-light");
+        document.body.classList.remove("telegram-dark");
+      }
+    });
+  } else {
+    document.body.classList.add("telegram-light");
+
+    const closeButton = document.getElementById("closeButton");
+    if (closeButton) {
+      closeButton.style.visibility = "hidden";
+    }
+  }
+}
+
+function getLessonFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const lessonNumber = Number(params.get("lesson"));
+
+  if (!lessonNumber) return null;
+
+  const index = lessons.findIndex((lesson) => lesson.number === lessonNumber);
+  return index >= 0 ? index : null;
+}
+
+function applyLessonFromUrl() {
+  const lessonIndexFromUrl = getLessonFromUrl();
+
+  if (lessonIndexFromUrl !== null) {
+    currentLessonIndex = lessonIndexFromUrl;
+    currentExerciseIndex = 0;
+    localStorage.setItem("currentLessonIndex", currentLessonIndex);
+    localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+  }
+}
+
 function normalize(text) {
   return text
     .toLowerCase()
@@ -199,19 +270,21 @@ function normalize(text) {
     .replace(/[\u0300-\u036f]/g, "");
 }
 
-function speakFrench(text) {
+function speakFrench(text, itemId) {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "fr-FR";
   utterance.rate = 0.85;
+
   speechSynthesis.cancel();
   speechSynthesis.speak(utterance);
-}
 
-function escapeForButton(text) {
-  return text
-    .replace(/\\/g, "\\\\")
-    .replace(/'/g, "\\'")
-    .replace(/"/g, "&quot;");
+  if (itemId) {
+    const circle = document.getElementById(itemId);
+    if (circle) {
+      circle.classList.add("done");
+      circle.textContent = "✓";
+    }
+  }
 }
 
 function renderLesson() {
@@ -226,19 +299,34 @@ function renderLesson() {
   document.getElementById("commonMistake").textContent = lesson.commonMistake;
   document.getElementById("learningAdvice").textContent = lesson.learningAdvice;
   document.getElementById("nextLesson").textContent = lesson.nextLesson;
+  document.getElementById("heroEmoji").textContent = lesson.emoji || "🇫🇷";
+
+  document.getElementById("streakNumber").textContent = getStreak();
+
+  const progressPercentage = ((currentLessonIndex + 1) / lessons.length) * 100;
+  document.getElementById("progressFill").style.width = `${progressPercentage}%`;
 
   const practiceList = document.getElementById("practiceList");
   practiceList.innerHTML = "";
 
-  lesson.practice.forEach((item) => {
+  lesson.practice.forEach((item, index) => {
+    const itemId = `done-${lesson.number}-${index}`;
+
     const div = document.createElement("div");
     div.className = "practice-item";
 
     div.innerHTML = `
+      <div class="practice-icon">${item.icon || "🇫🇷"}</div>
       <p class="english">${item.en}</p>
       <p class="french">${item.fr}</p>
-      <button onclick="speakFrench('${escapeForButton(item.fr)}')">Listen</button>
+      <button class="listen-button" type="button" aria-label="Listen">🔊</button>
+      <div class="done-circle" id="${itemId}"></div>
     `;
+
+    const listenButton = div.querySelector(".listen-button");
+    listenButton.addEventListener("click", function () {
+      speakFrench(item.fr, itemId);
+    });
 
     practiceList.appendChild(div);
   });
@@ -277,6 +365,7 @@ function checkAnswer() {
     score++;
     feedback.className = "correct";
     feedback.textContent = "Correct! Très bien.";
+    updateStreak();
   } else if (isAlmostCorrect(normalizedUser, normalizedCorrect)) {
     score += 0.5;
     feedback.className = "almost";
@@ -289,8 +378,15 @@ function checkAnswer() {
   correctAnswerBox.innerHTML = `
     <p><strong>Correct answer:</strong></p>
     <p class="french">${correctAnswer}</p>
-    <button onclick="speakFrench('${escapeForButton(correctAnswer)}')">Listen</button>
+    <button id="listenCorrectAnswer" type="button">Listen</button>
   `;
+
+  const listenCorrectAnswer = document.getElementById("listenCorrectAnswer");
+  if (listenCorrectAnswer) {
+    listenCorrectAnswer.addEventListener("click", function () {
+      speakFrench(correctAnswer);
+    });
+  }
 
   localStorage.setItem("score", score);
   localStorage.setItem("attempts", attempts);
@@ -330,6 +426,7 @@ function nextLessonButton() {
     localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
 
     renderLesson();
+    scrollToTop();
   }
 }
 
@@ -342,12 +439,33 @@ function previousLesson() {
     localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
 
     renderLesson();
+    scrollToTop();
   }
 }
 
 function updateScore() {
-  document.getElementById("scoreDisplay").textContent =
-    `Score: ${score} / ${attempts}`;
+  const scoreText = `Score: ${score} / ${attempts}`;
+  const existingScore = document.getElementById("scoreDisplay");
+
+  if (existingScore) {
+    existingScore.textContent = scoreText;
+  }
+}
+
+function getStreak() {
+  return Number(localStorage.getItem("streak")) || 1;
+}
+
+function updateStreak() {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastCorrectDate = localStorage.getItem("lastCorrectDate");
+
+  if (lastCorrectDate !== today) {
+    const newStreak = getStreak() + 1;
+    localStorage.setItem("streak", newStreak);
+    localStorage.setItem("lastCorrectDate", today);
+    document.getElementById("streakNumber").textContent = newStreak;
+  }
 }
 
 function resetProgress() {
@@ -360,8 +478,93 @@ function resetProgress() {
   localStorage.setItem("attempts", attempts);
   localStorage.setItem("currentLessonIndex", currentLessonIndex);
   localStorage.setItem("currentExerciseIndex", currentExerciseIndex);
+  localStorage.setItem("streak", 1);
+  localStorage.removeItem("lastCorrectDate");
 
   renderLesson();
+  scrollToTop();
 }
 
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function scrollToPractice() {
+  const practiceCard = document.querySelector(".practice-card");
+  if (practiceCard) {
+    practiceCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function scrollToExercise() {
+  const exerciseCard = document.querySelector(".exercise-card");
+  if (exerciseCard) {
+    exerciseCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function showTips() {
+  const tipsCard = document.getElementById("tipsCard");
+  if (tipsCard) {
+    tipsCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function setupButtons() {
+  const checkAnswerButton = document.getElementById("checkAnswerButton");
+  const nextExerciseButton = document.getElementById("nextExerciseButton");
+  const previousLessonButton = document.getElementById("previousLessonButton");
+  const nextLessonBtn = document.getElementById("nextLessonButton");
+
+  const homeNav = document.getElementById("homeNav");
+  const practiceNav = document.getElementById("practiceNav");
+  const exerciseNav = document.getElementById("exerciseNav");
+  const tipsNav = document.getElementById("tipsNav");
+  const resetNav = document.getElementById("resetNav");
+  const tipsTopButton = document.getElementById("tipsTopButton");
+
+  if (checkAnswerButton) {
+    checkAnswerButton.addEventListener("click", checkAnswer);
+  }
+
+  if (nextExerciseButton) {
+    nextExerciseButton.addEventListener("click", nextExercise);
+  }
+
+  if (previousLessonButton) {
+    previousLessonButton.addEventListener("click", previousLesson);
+  }
+
+  if (nextLessonBtn) {
+    nextLessonBtn.addEventListener("click", nextLessonButton);
+  }
+
+  if (homeNav) {
+    homeNav.addEventListener("click", scrollToTop);
+  }
+
+  if (practiceNav) {
+    practiceNav.addEventListener("click", scrollToPractice);
+  }
+
+  if (exerciseNav) {
+    exerciseNav.addEventListener("click", scrollToExercise);
+  }
+
+  if (tipsNav) {
+    tipsNav.addEventListener("click", showTips);
+  }
+
+  if (resetNav) {
+    resetNav.addEventListener("click", resetProgress);
+  }
+
+  if (tipsTopButton) {
+    tipsTopButton.addEventListener("click", showTips);
+  }
+}
+
+initTelegramMiniApp();
+applyLessonFromUrl();
 renderLesson();
+setupButtons();
