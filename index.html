@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>French Daily Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>🇫🇷 French Daily Trainer</h1>
+      <p id="lessonCounter"></p>
+    </header>
+
+    <section class="card">
+      <h2 id="lessonTitle"></h2>
+      <p id="lessonWhy"></p>
+    </section>
+
+    <section class="card">
+      <h3>Rule of the Day</h3>
+      <p id="ruleFrench"></p>
+      <p id="ruleEnglish"></p>
+    </section>
+
+    <section class="card">
+      <h3>Practice</h3>
+      <p class="instruction">
+        Read the English sentence first. Try to say it in French. Then listen and repeat.
+      </p>
+      <div id="practiceList"></div>
+    </section>
+
+    <section class="card">
+      <h3>Exercise</h3>
+      <p>Translate this sentence into French:</p>
+      <p class="english-prompt" id="exerciseEnglish"></p>
+
+      <input id="answerInput" type="text" placeholder="Type your French answer here" />
+      <button onclick="checkAnswer()">Check Answer</button>
+
+      <p id="feedback"></p>
+      <div id="correctAnswerBox"></div>
+    </section>
+
+    <section class="card">
+      <h3>Tips</h3>
+      <p><strong>Pronunciation:</strong> <span id="pronunciationTip"></span></p>
+      <p><strong>Common mistake:</strong> <span id="commonMistake"></span></p>
+      <p><strong>Learning advice:</strong> <span id="learningAdvice"></span></p>
+    </section>
+
+    <section class="card">
+      <h3>Progress</h3>
+      <p id="scoreDisplay"></p>
+
+      <button onclick="nextExercise()">Next Exercise</button>
+      <button onclick="previousLesson()" class="secondary">Previous Lesson</button>
+      <button onclick="nextLessonButton()" class="secondary">Next Lesson</button>
+      <button onclick="resetProgress()" class="danger">Reset Progress</button>
+    </section>
+
+    <section class="card">
+      <h3>Next Lesson</h3>
+      <p id="nextLesson"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
