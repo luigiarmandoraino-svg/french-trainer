@@ -46,3 +46,11 @@
   .tab-row{grid-template-columns:repeat(2,minmax(0,1fr))!important;display:grid!important;}
   .tab{min-width:0!important;padding:10px 8px!important;font-size:.86rem!important;}
 }
+
+/* v16 refinements */
+.fill-french-line{display:flex;align-items:center;flex-wrap:wrap;gap:.45rem;margin-top:.7rem;padding:.7rem;border:1px dashed var(--border);border-radius:14px;background:rgba(255,255,255,.05)}
+.fill-french-line .fill-label{font-weight:900;color:var(--accent)}
+.fill-french-line .fill-input{min-width:110px;max-width:170px;flex:0 1 140px;margin:0;height:36px;text-align:center;font-weight:800}
+.exam-card .translation-row{border-left:3px solid var(--accent)}
+.tab.disabled{opacity:.55;filter:grayscale(.25)}
+@media(max-width:720px){.fill-french-line{font-size:.92rem}.fill-french-line .fill-input{height:34px;max-width:145px}.tab-row{gap:.5rem}.tab{padding:.75rem .5rem}}
