@@ -35368,6 +35368,57 @@ function getPracticeSentences(lesson){
   }
   return clean.slice(0,10);
 }
+
+function chooseBlankWord(fr){
+  const skip = new Set(['je','j','tu','il','elle','nous','vous','ils','elles','le','la','les','un','une','des','du','de','d','au','aux','et','ou','mais','donc','car','que','qui','où','dont','à','en','dans','sur','pour','avec','sans','ce','cet','cette','ces','mon','ma','mes','ton','ta','tes','son','sa','ses','notre','votre','leur','leurs','pas','ne','n','est','sont','a','ont','ai','as','avons','avez','vais','va','allons','allez','vont']);
+  const tokens = splitTokens(fr);
+  const candidates = tokens.map((w,i)=>({w,i,clean:w.toLowerCase().replace(/[’']/g,"'").replace(/[^a-zàâçéèêëîïôùûüÿñæœ'-]/gi,'')}))
+    .filter(x=>x.clean.length>=4 && !skip.has(x.clean.replace(/^l'|^d'|^j'|^n'|^s'|^qu'/,'')) && !/[?.!,;:]/.test(x.w));
+  if(candidates.length){
+    candidates.sort((a,b)=>b.clean.length-a.clean.length);
+    return candidates[Math.min(1,candidates.length-1)];
+  }
+  const fallback=tokens.findIndex(w=>w.length>2 && !/[?.!,;:]/.test(w));
+  return {w: tokens[fallback>=0?fallback:0] || '', i: fallback>=0?fallback:0};
+}
+function blankFrench(fr){
+  const tokens=splitTokens(fr);
+  if(!tokens.length) return {before:'',answer:'',after:'',full:fr};
+  const pick=chooseBlankWord(fr);
+  const answer=pick.w;
+  tokens[pick.i]='__________';
+  const blanked=tokens.join(' ').replace(/\s+([?.!,;:])/g,'$1');
+  const parts=blanked.split('__________');
+  return {before:parts[0]||'', answer, after:parts.slice(1).join('__________')||'', full:fr};
+}
+function mutateWord(word, mode){
+  const accents = {'é':'e','è':'e','ê':'e','à':'a','ç':'c','ù':'u','î':'i','ô':'o'};
+  let w=word;
+  if(mode===0){
+    for(const [a,b] of Object.entries(accents)){ if(w.includes(a)) return w.replace(a,b); }
+    return w.length>3 ? w.slice(0,-1) : w+'e';
+  }
+  if(mode===1){
+    return w.length>4 ? w.slice(0,-2)+w.slice(-1) : w+'s';
+  }
+  if(mode===2){
+    if(w.length>3){ const i=Math.max(1,Math.floor(w.length/2)-1); return w.slice(0,i)+w[i+1]+w[i]+w.slice(i+2); }
+    return w+'r';
+  }
+  return w.length>4 ? w+'e' : w+'t';
+}
+function spellingOptions(answer){
+  const set=new Set([answer]);
+  let mode=0;
+  while(set.size<4 && mode<12){
+    const v=mutateWord(answer, mode%4);
+    if(normalizeAnswer(v)!==normalizeAnswer(answer)) set.add(v);
+    mode++;
+  }
+  while(set.size<4) set.add(answer + (set.size===1?'e':set.size===2?'s':'t'));
+  return Array.from(set).sort(()=>Math.random()-0.5);
+}
+
 function renderPractice(lesson){
   const practice=getPracticeSentences(lesson);
   if(!practice.length){ return `<article class="exercise-card"><h3 class="section-title"><span>🎯</span> Practice</h3><p class="muted">Practice is loading. Please reopen this class or refresh the app.</p></article>`; }
