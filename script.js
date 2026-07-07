@@ -1,5 +1,5 @@
 // French A1-C2 Telegram App - static/no AI/no backend
-// Revised version: mandatory progression, blurred sentence translations, 0.5x audio, improved scoring and mistake review.
+// v13: all lesson sections are always rendered; Practice is visible below Sentences; cache-busted external files.
 
 const DATA = {
   "A1": [
@@ -35273,11 +35273,12 @@ function renderLesson(){
   const tpl=$('#lessonTemplate').content.cloneNode(true); tpl.querySelector('[data-field="classPill"]').textContent=`${state.level} · Class ${lesson.id}`; tpl.querySelector('[data-field="title"]').textContent=lesson.title; tpl.querySelector('[data-field="objective"]').textContent=lesson.objective || '';
   const examTab=tpl.querySelector('[data-tab="exam"]'); if(!lesson.exam || !lesson.exam.length){ const d=nextExamDistance(lesson.id); examTab.textContent=d===null?'Exam later':`Exam in ${d} class${d===1?'':'es'}`; examTab.disabled=true; examTab.classList.add('disabled'); }
   tpl.querySelector('#changeLevelBtn').addEventListener('click',()=>{ state.level=''; saveState(); setupSelector(); render(); });
-  $$('.tab',tpl).forEach(tab=>{ tab.classList.toggle('active',tab.dataset.tab===state.tab); tab.addEventListener('click',()=>{ if(tab.disabled) return; state.tab=tab.dataset.tab; saveState(); render(); }); });
+  $$('.tab',tpl).forEach(tab=>{ tab.classList.toggle('active',tab.dataset.tab===state.tab); tab.addEventListener('click',()=>{ if(tab.disabled) return; state.tab=tab.dataset.tab; saveState(); render(); setTimeout(()=>document.getElementById(`${state.tab}Section`)?.scrollIntoView({behavior:'smooth',block:'start'}),80); }); });
   $('#app').innerHTML=''; $('#app').appendChild(tpl); renderTab(lesson); setupSelector();
 }
 function getRuleParts(lesson){ const fr=(lesson.rule||[]).find(x=>x.startsWith('Explication simple en français:'))||''; const en=(lesson.rule||[]).find(x=>x.startsWith('English explanation:'))||''; return {fr:fr.replace('Explication simple en français:','').trim(), en:en.replace('English explanation:','').trim()}; }
-function renderTab(lesson){ const c=$('#tabContent'); if(state.tab==='learn') c.innerHTML=renderLearn(lesson); if(state.tab==='sentences') c.innerHTML=renderSentences(lesson); if(state.tab==='practice') c.innerHTML=renderPractice(lesson); if(state.tab==='exam') c.innerHTML=renderExam(lesson); bindDynamicActions(c,lesson); }
+function renderTab(lesson){ const c=$('#tabContent'); c.innerHTML=renderAllSections(lesson); bindDynamicActions(c,lesson); }
+function renderAllSections(lesson){ return `<div id="learnSection" class="section-anchor">${renderLearn(lesson)}</div><div id="sentencesSection" class="section-anchor">${renderSentences(lesson)}</div><div id="practiceSection" class="section-anchor">${renderPractice(lesson)}</div>${lesson.exam&&lesson.exam.length?`<div id="examSection" class="section-anchor">${renderExam(lesson)}</div>`:''}`; }
 function renderLearn(lesson){ const rule=getRuleParts(lesson); return `<article class="lesson-card"><h3 class="section-title"><span>🔁</span> Refresh the previous class</h3><ul class="review-list">${(lesson.review||[]).map(x=>`<li>${escapeHtml(x)}</li>`).join('')}</ul></article>
 <article class="lesson-card"><h3 class="section-title"><span>🧠</span> Rule of the day</h3><div class="rule-box"><strong>Explication simple en français</strong><p>${escapeHtml(rule.fr)}</p><div class="rule-listen"><button class="speech-btn" type="button" data-speak="${escapeHtml(rule.fr)}" data-rate="0.86">🔊 Listen</button><button class="speech-btn slow-btn" type="button" data-speak="${escapeHtml(rule.fr)}" data-rate="0.5">🐢 Slow 0.5x</button></div><strong>English explanation</strong><p>${escapeHtml(rule.en)}</p></div></article>
 <article class="lesson-card"><h3 class="section-title"><span>📚</span> Vocabulary of the day</h3><p class="muted">New words and useful chunks for this class. Previous vocabulary may still appear in practice.</p><ul class="vocab-list">${(lesson.vocabulary||[]).map(v=>`<li>${escapeHtml(v)}</li>`).join('')}</ul></article>`; }
