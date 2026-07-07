@@ -35179,7 +35179,7 @@ const LEVEL_META = {
   C1: {name:'Advanced French', desc:'Precise argumentation, synthesis, register, professional and academic discourse.'},
   C2: {name:'Mastery French', desc:'Subtle meaning, rhetoric, implicit language, style control and high-level mediation.'}
 };
-const STORAGE_KEY = 'frenchA1C2AppStateV10';
+const STORAGE_KEY = 'frenchA1C2AppStateV11';
 const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
 const state = {
   level: saved.level || '',
@@ -35204,18 +35204,38 @@ function setTheme(theme){ state.theme = theme; document.documentElement.setAttri
 function escapeHtml(value=''){ return String(value).replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch] || ch)); }
 function normalizeAnswer(value=''){ return value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[’']/g,"'").replace(/[^a-z0-9' ]/gi,'').replace(/\s+/g,' ').trim(); }
 function showToast(message){ const old=$('.toast'); if(old) old.remove(); const t=document.createElement('div'); t.className='toast'; t.textContent=message; document.body.appendChild(t); setTimeout(()=>t.remove(),2600); }
+let slowSpeechTimer = null;
 function speakFrench(text, rate=0.86){
   if(!('speechSynthesis' in window)){ showToast('Text-to-speech is not available in this browser.'); return; }
   window.speechSynthesis.cancel();
-  const slow = Number(rate) <= 0.5;
-  const u=new SpeechSynthesisUtterance(slow ? String(text).replace(/\s+/g,' … ') : text);
-  u.lang='fr-FR';
-  u.rate=slow ? 0.38 : Number(rate || 0.86);
-  u.pitch=1;
+  if(slowSpeechTimer){ clearTimeout(slowSpeechTimer); slowSpeechTimer = null; }
+  const isSlow = Number(rate) <= 0.5;
   const voices=window.speechSynthesis.getVoices();
   const fr=voices.find(v => v.lang && v.lang.toLowerCase().startsWith('fr'));
-  if(fr) u.voice=fr;
-  window.speechSynthesis.speak(u);
+  const speakOne = (chunk, r=0.82, onend=null) => {
+    const u=new SpeechSynthesisUtterance(chunk);
+    u.lang='fr-FR';
+    u.rate=r;
+    u.pitch=1;
+    if(fr) u.voice=fr;
+    if(onend) u.onend=onend;
+    window.speechSynthesis.speak(u);
+  };
+  if(!isSlow){ speakOne(text, Number(rate || 0.86)); return; }
+  // True slow mode: short chunks with pauses. This works better in Telegram/iOS, where rate alone may be ignored.
+  const chunks = String(text)
+    .replace(/([,;:])/g, '$1|')
+    .replace(/([.!?])/g, '$1|')
+    .split('|')
+    .map(x=>x.trim())
+    .filter(Boolean);
+  let i=0;
+  const next=()=>{
+    if(i>=chunks.length) return;
+    const chunk=chunks[i++];
+    speakOne(chunk, 0.42, ()=>{ slowSpeechTimer=setTimeout(next, 520); });
+  };
+  next();
 }
 function getLessons(){ return DATA[state.level] || []; }
 function getLesson(){ return getLessons().find(l => l.id === state.current) || getLessons()[0]; }
@@ -35290,8 +35310,66 @@ function makeChoiceOptions(sentence,i){ const correct=sentence.fr; const chosen=
   return [correct,...chosen.slice(0,2)].sort(()=>Math.random()-0.5); }
 function splitTokens(fr){ return fr.replace(/([?.!,;:])/g,' $1').split(/\s+/).filter(Boolean); }
 function makeWordOrderQuestion(fr,i){ return splitTokens(fr).map((word,idx)=>({word,id:`${i}-${idx}-${word}`})).sort(()=>Math.random()-0.5); }
+
+function cleanPracticeLead(en, fr){
+  const enLeads=[
+    ['For this exercise, ',''], ['In this situation, ',''], ['During the activity, ',''], ['During this activity, ',''], ['For this practice, ',''], ['In this example, ',''],
+    ['After lunch, ',''], ['Tomorrow, ',''], ['Today, ','']
+  ];
+  const frLeads=[
+    ['Pour cet exercice, ',''], ['Dans cette situation, ',''], ["Pendant l'activité, ",''], ['Pendant cette activité, ',''], ['Pour cette pratique, ',''], ['Dans cet exemple, ',''],
+    ['Après le déjeuner, ',''], ['Demain, ',''], ["Aujourd'hui, ",'']
+  ];
+  let outEn=en || '', outFr=fr || '';
+  enLeads.forEach(([a,b])=>{ if(outEn.startsWith(a)) outEn=b+outEn.slice(a.length); });
+  frLeads.forEach(([a,b])=>{ if(outFr.startsWith(a)) outFr=b+outFr.slice(a.length); });
+  outEn = outEn.charAt(0).toUpperCase() + outEn.slice(1);
+  outFr = outFr.charAt(0).toUpperCase() + outFr.slice(1);
+  return {en:outEn, fr:outFr};
+}
+function addNaturalContext(pair, i){
+  const contexts=[
+    ['At work, ', 'Au travail, '],
+    ['This week, ', 'Cette semaine, '],
+    ['In the morning, ', 'Le matin, '],
+    ['With my family, ', 'Avec ma famille, '],
+    ['At the station, ', 'À la gare, '],
+    ['In class, ', 'En classe, '],
+    ['At home, ', 'À la maison, '],
+    ['Before the meeting, ', 'Avant la réunion, '],
+    ['In my city, ', 'Dans ma ville, '],
+    ['On Saturday, ', 'Samedi, ']
+  ];
+  let {en,fr}=cleanPracticeLead(pair.en,pair.fr);
+  const [cen,cfr]=contexts[i % contexts.length];
+  // Avoid adding a context when the sentence is already a question or already has a natural leading time/place phrase.
+  if(!en.includes('?') && !/^(At|In|On|Before|After|With|This|Today|Tomorrow|Yesterday|When|If)\b/i.test(en)){
+    en = cen + en.charAt(0).toLowerCase() + en.slice(1);
+    fr = cfr + fr.charAt(0).toLowerCase() + fr.slice(1);
+  }
+  return {en,fr};
+}
+function getPracticeSentences(lesson){
+  let base = Array.isArray(lesson.practiceSentences) && lesson.practiceSentences.length ? lesson.practiceSentences : lesson.sentences;
+  base = (base || []).map((p,i)=>addNaturalContext(p,i));
+  // If old generated practice is too repetitive, mix in adapted sentence-bank items to keep the practice alive and varied.
+  if(base.length < 10 && Array.isArray(lesson.sentences)){
+    base = base.concat(lesson.sentences.map((p,i)=>addNaturalContext(p,i+base.length)));
+  }
+  // Remove duplicates and empty items.
+  const seen=new Set();
+  const clean=[];
+  for(const p of base){
+    if(!p || !p.en || !p.fr) continue;
+    const key=normalizeAnswer(p.en+' '+p.fr);
+    if(seen.has(key)) continue;
+    seen.add(key); clean.push(p);
+  }
+  return clean.slice(0,10);
+}
 function renderPractice(lesson){
-  const practice=lesson.practiceSentences || lesson.sentences;
+  const practice=getPracticeSentences(lesson);
+  if(!practice.length){ return `<article class="exercise-card"><h3 class="section-title"><span>🎯</span> Practice</h3><p class="muted">Practice is loading. Please reopen this class or refresh the app.</p></article>`; }
   const choiceQuestions=practice.slice(0,5).map((s,i)=>({...s,choices:makeChoiceOptions(s,i),answer:s.fr}));
   const fillQuestions=practice.slice(5,8).map(s=>({...blankFrench(s.fr),en:s.en,full:s.fr}));
   const orderQuestions=practice.map((s,i)=>({...s,tokens:makeWordOrderQuestion(s.fr,i)}));
