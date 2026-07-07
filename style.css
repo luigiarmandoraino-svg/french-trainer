@@ -23,3 +23,14 @@
   .bottom-nav select{order:0;min-width:0;width:100%;}
   .toast{bottom:72px;}
 }
+
+/* v12 fix: compact mobile footer and practice visibility */
+@media(max-width:700px){
+  .app-shell{padding-bottom:78px!important;}
+  .bottom-nav{width:calc(100% - 16px)!important;grid-template-columns:38px minmax(0,1fr) 38px!important;gap:5px!important;padding:6px!important;border-radius:16px!important;bottom:max(4px,env(safe-area-inset-bottom))!important;}
+  .bottom-nav button,.bottom-nav select{min-height:34px!important;padding:6px 7px!important;border-radius:11px!important;font-size:.82rem!important;}
+  .bottom-nav button{font-size:1rem!important;}
+  .exercise-card{display:grid!important;}
+  .choice-grid,.word-bank,.answer-bank{display:flex!important;}
+  .choice-grid{flex-direction:column!important;}
+}
