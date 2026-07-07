@@ -79,7 +79,7 @@ const DATA = {
         },
         {
           "en": "They are in the office.",
-          "fr": "Ils sont dans la bureau."
+          "fr": "Ils sont au bureau."
         },
         {
           "en": "Are you Italian?",
@@ -806,7 +806,7 @@ const DATA = {
         },
         {
           "en": "They are not at the office.",
-          "fr": "Ils ne sont pas à le bureau."
+          "fr": "Ils ne sont pas au bureau."
         }
       ]
     },
@@ -1945,7 +1945,7 @@ const DATA = {
         },
         {
           "en": "The book is on the desk.",
-          "fr": "Le livre est sur la bureau."
+          "fr": "Le livre est sur le bureau."
         },
         {
           "en": "The bag is under the table.",
@@ -2738,7 +2738,7 @@ const DATA = {
         },
         {
           "en": "The book is on the desk.",
-          "fr": "Le livre est sur la bureau."
+          "fr": "Le livre est sur le bureau."
         },
         {
           "en": "The bag is under the table.",
@@ -3665,7 +3665,7 @@ const DATA = {
         },
         {
           "en": "We are going to visit the village.",
-          "fr": "Nous allons visiter la village."
+          "fr": "Nous allons visiter le village."
         },
         {
           "en": "She is going to rest before work.",
@@ -4014,11 +4014,11 @@ const DATA = {
         },
         {
           "en": "We are at the office this evening.",
-          "fr": "Nous sommes à le bureau ce soir."
+          "fr": "Nous sommes au bureau ce soir."
         },
         {
           "en": "They are in the office.",
-          "fr": "Ils sont dans la bureau."
+          "fr": "Ils sont au bureau."
         },
         {
           "en": "Are you Italian?",
@@ -5817,7 +5817,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -5861,7 +5861,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -5893,7 +5893,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -5963,7 +5963,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -5999,7 +5999,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6007,7 +6007,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6069,7 +6069,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6105,7 +6105,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6113,7 +6113,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6175,7 +6175,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6211,7 +6211,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6219,7 +6219,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6281,7 +6281,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6317,7 +6317,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6325,7 +6325,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6387,7 +6387,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6431,7 +6431,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6463,7 +6463,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6533,7 +6533,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6580,7 +6580,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6588,7 +6588,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6650,7 +6650,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6686,7 +6686,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6694,7 +6694,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6756,7 +6756,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -6792,7 +6792,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -6800,7 +6800,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7220,7 +7220,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7256,7 +7256,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -7264,7 +7264,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7503,7 +7503,7 @@ const DATA = {
         },
         {
           "en": "If it rains, we will stay the office.",
-          "fr": "S’il pleut, nous resterons à le bureau."
+          "fr": "S’il pleut, nous resterons au bureau."
         },
         {
           "en": "I am going to send the document.",
@@ -7609,7 +7609,7 @@ const DATA = {
         },
         {
           "en": "If it rains, we will stay the office.",
-          "fr": "S’il pleut, nous resterons à le bureau."
+          "fr": "S’il pleut, nous resterons au bureau."
         },
         {
           "en": "I am going to send the document.",
@@ -7801,7 +7801,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7837,7 +7837,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -7845,7 +7845,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7907,7 +7907,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -7943,7 +7943,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -7951,7 +7951,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8013,7 +8013,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8049,7 +8049,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -8057,7 +8057,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8594,7 +8594,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8630,7 +8630,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -8638,7 +8638,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8700,7 +8700,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8744,7 +8744,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8776,7 +8776,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -8846,7 +8846,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8882,7 +8882,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -8890,7 +8890,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8952,7 +8952,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -8999,7 +8999,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9007,7 +9007,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9069,7 +9069,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9105,7 +9105,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9113,7 +9113,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9175,7 +9175,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9211,7 +9211,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9219,7 +9219,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9281,7 +9281,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9325,7 +9325,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9357,7 +9357,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9427,7 +9427,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9463,7 +9463,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9471,7 +9471,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9533,7 +9533,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9569,7 +9569,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9577,7 +9577,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9639,7 +9639,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9675,7 +9675,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9683,7 +9683,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9745,7 +9745,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9792,7 +9792,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -9800,7 +9800,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9862,7 +9862,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9906,7 +9906,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -9938,7 +9938,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10008,7 +10008,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10044,7 +10044,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10052,7 +10052,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10114,7 +10114,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10150,7 +10150,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10158,7 +10158,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10280,7 +10280,7 @@ const DATA = {
         },
         {
           "en": "If it rains, we will stay the office.",
-          "fr": "S’il pleut, nous resterons à le bureau."
+          "fr": "S’il pleut, nous resterons au bureau."
         },
         {
           "en": "I am going to send the document.",
@@ -10578,7 +10578,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10625,7 +10625,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10633,7 +10633,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10695,7 +10695,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10731,7 +10731,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10739,7 +10739,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10801,7 +10801,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10837,7 +10837,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10845,7 +10845,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10907,7 +10907,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -10943,7 +10943,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -10951,7 +10951,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11013,7 +11013,7 @@ const DATA = {
       "sentences": [
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11057,7 +11057,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11089,7 +11089,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -11159,7 +11159,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11195,7 +11195,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -11203,7 +11203,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11265,7 +11265,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11301,7 +11301,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -11309,7 +11309,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11371,7 +11371,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11418,7 +11418,7 @@ const DATA = {
         },
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -11426,7 +11426,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11488,7 +11488,7 @@ const DATA = {
         },
         {
           "en": "I like the city, but it is expensive.",
-          "fr": "J’aime la ville, mais elle est chère."
+          "fr": "J’aime la ville, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11533,7 +11533,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I stayed the office because I was tired.",
-          "fr": "Je suis resté à le bureau parce que j’étais fatigué."
+          "fr": "Je suis resté au bureau parce que j’étais fatigué."
         },
         {
           "en": "The train was early, so we took a taxi.",
@@ -11541,7 +11541,7 @@ const DATA = {
         },
         {
           "en": "I like the village, but it is expensive.",
-          "fr": "J’aime la village, mais elle est chère."
+          "fr": "J’aime le village, mais il est cher."
         },
         {
           "en": "Although it was raining, we went out.",
@@ -11773,7 +11773,7 @@ const DATA = {
         },
         {
           "en": "They need more time to finish the email.",
-          "fr": "Ils ont besoin de plus de temps pour finir le e-mail."
+          "fr": "Ils ont besoin de plus de temps pour finir l’e-mail."
         },
         {
           "en": "Do you have experience without online courses?",
@@ -11875,7 +11875,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "I work from the office twice a week.",
-          "fr": "Je travaille à le bureau deux fois par semaine."
+          "fr": "Je travaille au bureau deux fois par semaine."
         },
         {
           "en": "She prepares dinner after the children arrive.",
@@ -12111,7 +12111,7 @@ const DATA = {
         },
         {
           "en": "We come from a small city near the lake.",
-          "fr": "Nous venons d'un petit ville près du lac."
+          "fr": "Nous venons d'un petite ville près du lac."
         },
         {
           "en": "They take the bus when it is possible.",
@@ -12119,7 +12119,7 @@ const DATA = {
         },
         {
           "en": "Do you put your keys on the desk?",
-          "fr": "Est-ce que tu mets tes clés sur la bureau?"
+          "fr": "Est-ce que tu mets tes clés sur le bureau?"
         },
         {
           "en": "He makes an effort to speak more clearly.",
@@ -13090,7 +13090,7 @@ const DATA = {
         },
         {
           "en": "The keys are on the desk in the kitchen.",
-          "fr": "Les clés sont sur la bureau dans la cuisine."
+          "fr": "Les clés sont sur le bureau dans la cuisine."
         },
         {
           "en": "We live near the lake, far from the airport.",
@@ -13413,7 +13413,7 @@ const DATA = {
         },
         {
           "en": "They wash their hands after eating.",
-          "fr": "Ils se lavent les mains après de manger."
+          "fr": "Ils se lavent les mains avant de manger."
         }
       ]
     },
@@ -13503,7 +13503,7 @@ const DATA = {
         },
         {
           "en": "They speak to the manager and explain the question to him.",
-          "fr": "Ils parlent au responsable et ils lui expliquent le question."
+          "fr": "Ils parlent au responsable et ils lui expliquent la question."
         },
         {
           "en": "Do you write to your parents every week?",
@@ -13641,7 +13641,7 @@ const DATA = {
         },
         {
           "en": "They take some water after leaving.",
-          "fr": "Ils en prennent après de partir."
+          "fr": "Ils en prennent avant de partir."
         }
       ]
     },
@@ -13747,7 +13747,7 @@ const DATA = {
         },
         {
           "en": "Look at the example after answering.",
-          "fr": "Regardez l'exemple après de répondre."
+          "fr": "Regardez l'exemple avant de répondre."
         },
         {
           "en": "Do not speak too fast during the exam.",
@@ -13963,7 +13963,7 @@ const DATA = {
         },
         {
           "en": "They live in the quietest area of the village.",
-          "fr": "Ils habitent dans le quartier le plus calme de la village."
+          "fr": "Ils habitent dans le quartier le plus calme du village."
         },
         {
           "en": "What is the most important exercise for you?",
@@ -14136,7 +14136,7 @@ const DATA = {
         },
         {
           "en": "The village where I live is very green.",
-          "fr": "La village où j'habite est très verte."
+          "fr": "Le village où j'habite est très verte."
         },
         {
           "en": "This is the topic that we talked about.",
@@ -14478,7 +14478,7 @@ const DATA = {
         },
         {
           "en": "We put the documents on the desk.",
-          "fr": "Nous avons mis les documents sur la bureau."
+          "fr": "Nous avons mis les documents sur le bureau."
         },
         {
           "en": "They saw a beautiful film last night.",
@@ -14706,7 +14706,7 @@ const DATA = {
         },
         {
           "en": "She was tired, but she finished the email.",
-          "fr": "Elle était fatiguée, mais elle a fini le e-mail."
+          "fr": "Elle était fatiguée, mais elle a fini l’e-mail."
         },
         {
           "en": "We were having dinner when the computer rang.",
@@ -14730,7 +14730,7 @@ const DATA = {
         },
         {
           "en": "We used to travel every summer, but last year we stayed the office.",
-          "fr": "Nous voyagions chaque été, mais l'année dernière nous sommes restés à le bureau."
+          "fr": "Nous voyagions chaque été, mais l'année dernière nous sommes restés au bureau."
         },
         {
           "en": "The colleagues were playing when it started to rain.",
@@ -15127,7 +15127,7 @@ const DATA = {
         },
         {
           "en": "He is going to finish the email tonight.",
-          "fr": "Il va finir le e-mail ce soir."
+          "fr": "Il va finir l’e-mail ce soir."
         },
         {
           "en": "I am not going to travel this weekend.",
@@ -15143,7 +15143,7 @@ const DATA = {
         },
         {
           "en": "They are going to explain the question to the team.",
-          "fr": "Ils vont expliquer le question à l'équipe."
+          "fr": "Ils vont expliquer la question à l'équipe."
         }
       ]
     },
@@ -16224,7 +16224,7 @@ const DATA = {
         },
         {
           "en": "I discovered the village while walking without a plan.",
-          "fr": "J'ai découvert la village en marchant sans plan."
+          "fr": "J'ai découvert le village en marchant sans plan."
         },
         {
           "en": "We learn better by making personal examples.",
@@ -16440,7 +16440,7 @@ const DATA = {
         },
         {
           "en": "I doubt that he understands the question.",
-          "fr": "Je doute qu'il comprenne le question."
+          "fr": "Je doute qu'il comprenne la question."
         },
         {
           "en": "I do not think that this solution is enough.",
@@ -17085,7 +17085,7 @@ const DATA = {
         },
         {
           "en": "All the documents are on the desk.",
-          "fr": "Tous les documents sont sur la bureau."
+          "fr": "Tous les documents sont sur le bureau."
         },
         {
           "en": "Each person chooses an exercise.",
@@ -17820,11 +17820,11 @@ const DATA = {
         },
         {
           "en": "She understands the question; however, she needs more data.",
-          "fr": "Elle comprend le question; cependant, elle a besoin de plus de données."
+          "fr": "Elle comprend la question; cependant, elle a besoin de plus de données."
         },
         {
           "en": "We take the local context into account after making a decision.",
-          "fr": "Nous prenons en compte le contexte local après de prendre une décision."
+          "fr": "Nous prenons en compte le contexte local après avoir pris une décision."
         },
         {
           "en": "They usually agree, although they express their concerns calmly.",
@@ -18158,7 +18158,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "This is the email on which we based our decision.",
-          "fr": "C'est le e-mail sur lequel nous avons basé notre décision."
+          "fr": "C'est l’e-mail sur lequel nous avons basé notre décision."
         },
         {
           "en": "The appointment during which we discussed the budget was useful.",
@@ -18178,7 +18178,7 @@ const DATA = {
         },
         {
           "en": "The village in which they live is becoming more expensive.",
-          "fr": "La village dans laquelle ils vivent devient plus chère."
+          "fr": "Le village dans laquelle ils vivent devient plus chère."
         },
         {
           "en": "The reasons for which we changed the plan are clear.",
@@ -18394,7 +18394,7 @@ const DATA = {
         },
         {
           "en": "We had the email checked by a specialist.",
-          "fr": "Nous avons fait vérifier le e-mail par un spécialiste."
+          "fr": "Nous avons fait vérifier l’e-mail par un spécialiste."
         },
         {
           "en": "They are having the furniture delivered today.",
@@ -18410,7 +18410,7 @@ const DATA = {
         },
         {
           "en": "I will have the presentation corrected after sending it.",
-          "fr": "Je ferai corriger la présentation après de l'envoyer."
+          "fr": "Je ferai corriger la présentation après l’avoir envoyée."
         },
         {
           "en": "We must have the room prepared after the participants arrive.",
@@ -18652,7 +18652,7 @@ const DATA = {
         },
         {
           "en": "Had you booked the room after calling me?",
-          "fr": "Avais-tu réservé la salle après de m'appeler?"
+          "fr": "Avais-tu réservé la salle après m’avoir appelé?"
         },
         {
           "en": "He realized that he had forgotten his passport.",
@@ -18884,7 +18884,7 @@ const DATA = {
         },
         {
           "en": "I did not recognize the village because it had changed a lot.",
-          "fr": "Je n'ai pas reconnu la village parce qu'elle avait beaucoup changé."
+          "fr": "Je n'ai pas reconnu le village parce qu'elle avait beaucoup changé."
         },
         {
           "en": "He was explaining the plan when someone interrupted him.",
@@ -19100,7 +19100,7 @@ const DATA = {
         },
         {
           "en": "They explained that the question was more complex.",
-          "fr": "Ils ont expliqué que le question était plus complexe."
+          "fr": "Ils ont expliqué que la question était plus complexe."
         },
         {
           "en": "I replied that I needed more time.",
@@ -19230,7 +19230,7 @@ const DATA = {
         },
         {
           "en": "She found the keys and put them on the desk.",
-          "fr": "Elle a trouvé les clés et elle les a mises sur la bureau."
+          "fr": "Elle a trouvé les clés et elle les a mises sur le bureau."
         },
         {
           "en": "The mistakes that he corrected were clear.",
@@ -19238,7 +19238,7 @@ const DATA = {
         },
         {
           "en": "We visited the village and liked it a lot.",
-          "fr": "Nous avons visité la village et nous l'avons beaucoup aimée."
+          "fr": "Nous avons visité le village et nous l'avons beaucoup aimée."
         },
         {
           "en": "The problems that you asked were relevant.",
@@ -19700,7 +19700,7 @@ const DATA = {
         },
         {
           "en": "We do not believe that the question is solved.",
-          "fr": "Nous ne croyons pas que le question soit résolu."
+          "fr": "Nous ne croyons pas que la question soit résolu."
         },
         {
           "en": "It is likely that they will accept the proposal.",
@@ -20038,7 +20038,7 @@ const DATA = {
         },
         {
           "en": "They should have warned us after changing the date.",
-          "fr": "Ils auraient dû nous prévenir après de changer la date."
+          "fr": "Ils auraient dû nous prévenir après avoir changé la date."
         },
         {
           "en": "I might be wrong, but the explanation seems incomplete.",
@@ -20382,7 +20382,7 @@ const DATA = {
         },
         {
           "en": "We need to nuance the argument before presenting it.",
-          "fr": "Nous devons nuancer l'argument avant de le présenter."
+          "fr": "Nous devons nuancer l'argument avant du présenter."
         }
       ],
       "nextPreview": "Next class: Purpose and means — explaining objectives and methods.",
@@ -20426,7 +20426,7 @@ const DATA = {
         },
         {
           "en": "We need to nuance the argument after presenting it.",
-          "fr": "Nous devons nuancer l'argument après de le présenter."
+          "fr": "Nous devons nuancer l'argument après l’avoir présenté."
         }
       ]
     },
@@ -20532,7 +20532,7 @@ const DATA = {
         },
         {
           "en": "The meeting was organized to solve the question quickly.",
-          "fr": "La réunion a été organisée afin de résoudre le question rapidement."
+          "fr": "La réunion a été organisée afin de résoudre la question rapidement."
         },
         {
           "en": "I ask problems so that I do not misunderstand.",
@@ -20990,7 +20990,7 @@ const DATA = {
         },
         {
           "en": "In my view, the question is more complex.",
-          "fr": "À mon sens, le question est plus complexe."
+          "fr": "À mon sens, la question est plus complexe."
         },
         {
           "en": "I would like to emphasize one clear point.",
@@ -21336,7 +21336,7 @@ const DATA = {
         },
         {
           "en": "To be more precise, the question concerns communication.",
-          "fr": "Pour être plus précis, le question concerne la communication."
+          "fr": "Pour être plus précis, la question concerne la communication."
         },
         {
           "en": "The main idea is not useful to understand.",
@@ -21454,7 +21454,7 @@ const DATA = {
         },
         {
           "en": "According to the email, the results are improving.",
-          "fr": "Selon le e-mail, les résultats s'améliorent."
+          "fr": "Selon l’e-mail, les résultats s'améliorent."
         },
         {
           "en": "She specified that the decision was temporary.",
@@ -21552,7 +21552,7 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email was approved by the committee.",
-          "fr": "Le e-mail a été approuvé par le comité."
+          "fr": "L’e-mail a été approuvé par le comité."
         },
         {
           "en": "The results will be published next month.",
@@ -21584,7 +21584,7 @@ const DATA = {
         },
         {
           "en": "The question has been identified, but not solved.",
-          "fr": "Le question a été identifié, mais pas résolu."
+          "fr": "La question a été identifié, mais pas résolu."
         },
         {
           "en": "The new system will be tested next month.",
@@ -21944,7 +21944,7 @@ const DATA = {
         },
         {
           "en": "She put some there after leaving.",
-          "fr": "Elle y en a mis après de partir."
+          "fr": "Elle y en a mis avant de partir."
         },
         {
           "en": "We must not explain it to them too slowly.",
@@ -22002,7 +22002,7 @@ const DATA = {
         },
         {
           "en": "Try to understand it without translating.",
-          "fr": "Essaie de le comprendre sans traduire."
+          "fr": "Essaie du comprendre sans traduire."
         },
         {
           "en": "Continue to use it in full sentences.",
@@ -22046,7 +22046,7 @@ const DATA = {
         },
         {
           "en": "Try to understand it with translating.",
-          "fr": "Essaie de le comprendre avec traduire."
+          "fr": "Essaie du comprendre avec traduire."
         },
         {
           "en": "Continue to use it in full sentences.",
@@ -22160,7 +22160,7 @@ const DATA = {
         },
         {
           "en": "Do not write anything after reading the example.",
-          "fr": "N'écris pas n'importe quoi après de lire l'exemple."
+          "fr": "N'écris pas n'importe quoi après avoir lu l'exemple."
         },
         {
           "en": "No candidate answered all the problems.",
@@ -22494,11 +22494,11 @@ const DATA = {
         },
         {
           "en": "The question is complex, and this complexity must be recognized.",
-          "fr": "Le question est complexe, et cette complexité doit être reconnue."
+          "fr": "La question est complexe, et cette complexité doit être reconnue."
         },
         {
           "en": "The email mentions training; this element is essential.",
-          "fr": "Le e-mail mentionne la formation; cet élément est essentiel."
+          "fr": "L’e-mail mentionne la formation; cet élément est essentiel."
         },
         {
           "en": "The participants liked the app because it was difficult to use.",
@@ -22506,7 +22506,7 @@ const DATA = {
         },
         {
           "en": "The village attracts tourists; they appreciate its history.",
-          "fr": "La village attire les touristes; ils apprécient son histoire."
+          "fr": "Le village attire les touristes; ils apprécient son histoire."
         },
         {
           "en": "This method is effective, but such a method requires discipline.",
@@ -23000,7 +23000,7 @@ const DATA = {
         },
         {
           "en": "We must compare the results after drawing conclusions.",
-          "fr": "Nous devons comparer les résultats après de tirer des conclusions."
+          "fr": "Nous devons comparer les résultats après avoir tiré des conclusions."
         }
       ]
     },
@@ -23224,7 +23224,7 @@ const DATA = {
         },
         {
           "en": "We need to listen after judging the situation.",
-          "fr": "Nous devons écouter après de juger la situation."
+          "fr": "Nous devons écouter avant de juger la situation."
         },
         {
           "en": "This issue requires both practical and long-term solutions.",
@@ -23458,7 +23458,7 @@ const DATA = {
         },
         {
           "en": "The email was published after the data had been checked.",
-          "fr": "Le e-mail a été publié après que les données avaient été vérifiées."
+          "fr": "L’e-mail a été publié après que les données avaient été vérifiées."
         },
         {
           "en": "We must make sure that the document remains respectful.",
@@ -23670,15 +23670,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -23783,8 +23783,8 @@ const DATA = {
       "exam": [],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -23816,7 +23816,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -23922,15 +23922,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24028,15 +24028,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24240,15 +24240,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24364,8 +24364,8 @@ const DATA = {
       ],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24397,7 +24397,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -24609,15 +24609,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24821,15 +24821,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -24958,8 +24958,8 @@ const DATA = {
           "fr": "Je ne suis pas convaincu que la mesure ait l’effet attendu."
         },
         {
-          "en": "It is essential that the analysis take social consbusts into account.",
-          "fr": "Il est essentiel que l’analyse tienne compte des conbustes sociales."
+          "en": "It is essential that the analysis take social constraints into account.",
+          "fr": "Il est essentiel que l’analyse tienne compte des contraintes sociales."
         },
         {
           "en": "I doubt that this solution can be applied with adaptation.",
@@ -25064,8 +25064,8 @@ const DATA = {
           "fr": "Je ne suis pas convaincu que la mesure ait l’effet attendu."
         },
         {
-          "en": "It is essential that the analysis take social consbusts into account.",
-          "fr": "Il est essentiel que l’analyse tienne compte des conbustes sociales."
+          "en": "It is essential that the analysis take social constraints into account.",
+          "fr": "Il est essentiel que l’analyse tienne compte des contraintes sociales."
         },
         {
           "en": "I doubt that this solution can be applied with adaptation.",
@@ -25190,15 +25190,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -25296,15 +25296,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -25402,15 +25402,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -25520,7 +25520,7 @@ const DATA = {
         },
         {
           "en": "The email mentions risks, but it does not analyse them sufficiently.",
-          "fr": "Le e-mail mentionne des risques, mais il ne les analyse pas suffisamment."
+          "fr": "L’e-mail mentionne des risques, mais il ne les analyse pas suffisamment."
         },
         {
           "en": "We sent the participants the agenda before the appointment.",
@@ -25666,7 +25666,7 @@ const DATA = {
         },
         {
           "en": "The email mentions risks, but it does not analyse them sufficiently.",
-          "fr": "Le e-mail mentionne des risques, mais il ne les analyse pas suffisamment."
+          "fr": "L’e-mail mentionne des risques, mais il ne les analyse pas suffisamment."
         }
       ]
     },
@@ -25760,15 +25760,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -25866,15 +25866,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -25983,15 +25983,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26096,8 +26096,8 @@ const DATA = {
       "exam": [],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26129,7 +26129,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -26235,15 +26235,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26341,15 +26341,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26553,15 +26553,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26666,8 +26666,8 @@ const DATA = {
       "exam": [],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26699,7 +26699,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -26816,15 +26816,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -26922,15 +26922,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27028,15 +27028,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27134,15 +27134,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27247,8 +27247,8 @@ const DATA = {
       "exam": [],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27280,7 +27280,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -27386,15 +27386,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27492,15 +27492,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27609,15 +27609,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27715,15 +27715,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27828,8 +27828,8 @@ const DATA = {
       "exam": [],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -27861,7 +27861,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -27967,15 +27967,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28073,15 +28073,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28179,15 +28179,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28285,15 +28285,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28409,8 +28409,8 @@ const DATA = {
       ],
       "practiceSentences": [
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28442,7 +28442,7 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
@@ -28548,15 +28548,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28654,15 +28654,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28760,15 +28760,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -28866,15 +28866,15 @@ const DATA = {
       "practiceSentences": [
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -29118,15 +29118,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -29235,15 +29235,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -29350,15 +29350,15 @@ const DATA = {
         },
         {
           "en": "The email highlights a trend that had previously been underestimated.",
-          "fr": "Le e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
+          "fr": "L’e-mail met en évidence une tendance qui avait auparavant été sous-estimée."
         },
         {
           "en": "Although the proposal is ambitious, it remains realistic if the timeline is adjusted.",
           "fr": "Bien que la proposition soit ambitieuse, elle reste réaliste si le calendrier est ajusté."
         },
         {
-          "en": "I would qualify this conclusion because it does not take local consbusts into account.",
-          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des conbustes locales."
+          "en": "I would qualify this conclusion because it does not take local constraints into account.",
+          "fr": "Je nuancerais cette conclusion, car elle ne tient pas compte des contraintes locales."
         },
         {
           "en": "The speaker reformulated the problem in order to avoid a misunderstanding.",
@@ -30329,7 +30329,7 @@ const DATA = {
         "un euphémisme = euphemism"
       ],
       "rule": [
-        "Explication simple en français: Le passé simple est surtout un temps de l'écrit littéraire ou historique. Il correspond souvent au passé composé dans le français parlé. À ce niveau, l'objectif principal est de le reconnaître et de comprendre sa valeur narrative.",
+        "Explication simple en français: Le passé simple est surtout un temps de l'écrit littéraire ou historique. Il correspond souvent au passé composé dans le français parlé. À ce niveau, l'objectif principal est du reconnaître et de comprendre sa valeur narrative.",
         "English explanation: The passé simple is mainly a tense of literary or historical writing. It often corresponds to the passé composé in spoken French. At this level, the main goal is to recognise it and understand its narrative function."
       ],
       "sentences": [
@@ -35287,152 +35287,157 @@ function renderSentences(lesson){ return `<article class="lesson-card"><h3 class
 function tokenizeWords(text){ return String(text || '').replace(/[’']/g,"'").replace(/([?.!,;:])/g,' $1').split(/\s+/).filter(Boolean); }
 function lev(a,b){ a=normalizeAnswer(a); b=normalizeAnswer(b); const dp=Array(a.length+1).fill(0).map(()=>Array(b.length+1).fill(0)); for(let i=0;i<=a.length;i++) dp[i][0]=i; for(let j=0;j<=b.length;j++) dp[0][j]=j; for(let i=1;i<=a.length;i++){ for(let j=1;j<=b.length;j++){ const cost=a[i-1]===b[j-1]?0:1; dp[i][j]=Math.min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+cost); } } return dp[a.length][b.length]; }
 function wordSet(tokens){ return new Set(tokens.map(t=>normalizeAnswer(t)).filter(Boolean)); }
-function stripLeadingContext(text){
-  let s=String(text||'').trim();
-  const contexts=['Au travail,','À la maison,','A la maison,','Cette semaine,','La semaine dernière,','Le matin,','Le soir,','Aujourd’hui,','Aujourd\'hui,','Demain,','Lundi,','Avant le dîner,','Pendant le voyage,','Avec ma famille,','À la gare,','A la gare,','En classe,','Dans ma ville,','Samedi,','Avant la réunion,'];
-  for(const c of contexts){ if(normalizeAnswer(s).startsWith(normalizeAnswer(c))){ return s.slice(c.length).trim(); } }
-  return s;
-}
-function meaningfulDifference(correct,candidate){
-  const a=tokenizeWords(correct).filter(t=>!/^[?.!,;:]$/.test(t));
-  const b=tokenizeWords(candidate).filter(t=>!/^[?.!,;:]$/.test(t));
-  if(!a.length || !b.length) return false;
-  if(normalizeAnswer(stripLeadingContext(correct))===normalizeAnswer(stripLeadingContext(candidate))) return false;
-  const aset=wordSet(a), bset=wordSet(b);
-  const common=[...aset].filter(x=>bset.has(x)).length;
-  const overlap=common / Math.max(aset.size,bset.size,1);
-  if(overlap < 0.58) return false;
-  const removed=[...aset].filter(x=>!bset.has(x));
-  const added=[...bset].filter(x=>!aset.has(x));
-  if(!removed.length && !added.length) return false;
-  const allChanged=removed.concat(added).filter(Boolean);
-  // Reject distractors where the only change is tiny, e.g. qui/que, le/la, compris/comprends.
-  const hasSubstantial = allChanged.some(w=>w.length>=4) && (removed.some(r=>added.some(ad=>lev(r,ad)>2)) || Math.abs(a.length-b.length)>0);
-  const hasPhraseChange = allChanged.filter(w=>w.length>=4).length >= 2;
-  return hasSubstantial || hasPhraseChange;
-}
 function replaceFirstPhrase(fr, from, to){
   if(from instanceof RegExp){ if(from.test(fr)) return fr.replace(from,to); return ''; }
   const idx=fr.toLowerCase().indexOf(String(from).toLowerCase());
   if(idx<0) return '';
   return fr.slice(0,idx)+to+fr.slice(idx+String(from).length);
 }
+function optionQuality(correct,candidate,level='B1'){
+  if(!candidate) return -1;
+  const normCorrect=normalizeAnswer(correct), normCandidate=normalizeAnswer(candidate);
+  if(normCorrect===normCandidate) return -1;
+  const a=tokenizeWords(correct).filter(t=>!/^[?.!,;:]$/.test(t));
+  const b=tokenizeWords(candidate).filter(t=>!/^[?.!,;:]$/.test(t));
+  if(!a.length || !b.length) return -1;
+  const aset=wordSet(a), bset=wordSet(b);
+  const common=[...aset].filter(x=>bset.has(x)).length;
+  const overlap=common/Math.max(aset.size,bset.size,1);
+  // Keep the same sentence frame: wrong choices must remain close, not jump to a new topic.
+  const minOverlap = Math.max(a.length,b.length) <= 5 ? 0.30 : 0.56;
+  if(overlap < minOverlap) return -1;
+  if(overlap > 0.96) return -1;
+  const removed=[...aset].filter(x=>!bset.has(x));
+  const added=[...bset].filter(x=>!aset.has(x));
+  if(!removed.length && !added.length) return -1;
+  // Reject one-letter spelling games. The learner should reason about meaning, grammar, tense or connector.
+  if(removed.length===1 && added.length===1 && lev(removed[0],added[0])<=2) return -1;
+  const longChanges=removed.concat(added).filter(w=>w.length>=4);
+  if(longChanges.length < 1) return -1;
+  const target = ['A1','A2'].includes(level) ? 0.78 : ['B1','B2'].includes(level) ? 0.72 : 0.66;
+  const lenPenalty=Math.abs(a.length-b.length)*1.5;
+  return 100 - Math.abs(overlap-target)*100 - lenPenalty + Math.min(common,10);
+}
+function changedSignature(correct,candidate){
+  const a=wordSet(tokenizeWords(correct).filter(t=>!/^[?.!,;:]$/.test(t)));
+  const b=wordSet(tokenizeWords(candidate).filter(t=>!/^[?.!,;:]$/.test(t)));
+  const removed=[...a].filter(x=>!b.has(x));
+  const added=[...b].filter(x=>!a.has(x));
+  return removed.concat(['→']).concat(added).filter(Boolean).join('|');
+}
 function makeDistractorCandidates(fr, level='B1'){
   const rules=[
-    [/\ba compris\b/i,'a expliqué'], [/\bas compris\b/i,'as expliqué'], [/\bavons compris\b/i,'avons expliqué'], [/\bont compris\b/i,'ont expliqué'],
-    [/\ba perdu\b/i,'a trouvé'], [/\bont perdu\b/i,'ont retrouvé'], [/\bai perdu\b/i,'ai retrouvé'],
-    [/\ba attendu\b/i,'a demandé'], [/\bavons attendu\b/i,'avons discuté'], [/\bont attendu\b/i,'ont demandé'],
-    [/\ba acheté\b/i,'a vendu'], [/\bont acheté\b/i,'ont vendu'], [/\bai acheté\b/i,'ai vendu'],
-    [/\ba commencé\b/i,'a terminé'], [/\bont commencé\b/i,'ont terminé'], [/\bai commencé\b/i,'ai terminé'],
-    [/\ba quitté\b/i,'a visité'], [/\bont quitté\b/i,'ont visité'], [/\bai quitté\b/i,'ai visité'],
-    [/\ba répondu\b/i,'a posé'], [/\bont répondu\b/i,'ont posé'], [/\bai répondu\b/i,'ai posé'],
-    [/\ba pris\b/i,'a laissé'], [/\bont pris\b/i,'ont laissé'], [/\bai pris\b/i,'ai laissé'],
-    [/\ba vu\b/i,'a cherché'], [/\bont vu\b/i,'ont cherché'], [/\bai vu\b/i,'ai cherché'],
-    [/\ba fait\b/i,'a refusé'], [/\bont fait\b/i,'ont refusé'], [/\bai fait\b/i,'ai refusé'],
-    [/\bje suis\b/i,'je serai'], [/\btu es\b/i,'tu étais'], [/\bil est\b/i,'il sera'], [/\belle est\b/i,'elle était'], [/\bnous sommes\b/i,'nous serons'], [/\bils sont\b/i,'ils étaient'],
-    [/\bj'habite\b/i,"je travaille"], [/\bj’habitais\b/i,"je travaillais"], [/\bil habite\b/i,'il travaille'], [/\belle habite\b/i,'elle travaille'], [/\bnous habitons\b/i,'nous travaillons'],
-    [/\bj[’']aime\b/i,'je préfère'], [/\bje préfère\b/i,"j'évite"], [/\bnous aimons\b/i,'nous choisissons'], [/\bils aiment\b/i,'ils choisissent'],
-    [/\bdois\b/i,'peux'], [/\bdevons\b/i,'pouvons'], [/\bdoivent\b/i,'peuvent'], [/\bdevrait\b/i,'pourrait'], [/\bpourrait\b/i,'devrait'],
-    [/\btendance\b/i,'hypothèse'], [/\bauparavant\b/i,'récemment'], [/\bsous-estimée\b/i,'surestimée'], [/\bnuancerais\b/i,'résumerais'], [/\bconclusion\b/i,'hypothèse'], [/\bcontraintes locales\b/i,'préférences personnelles'], [/\btraduction littérale\b/i,'traduction libre'], [/\bexacte\b/i,'approximative'], [/\btrompeuse\b/i,'convaincante'], [/\bforme\b/i,'fond'], [/\bconcession\b/i,'objection'], [/\brecadrage stratégique\b/i,'résumé descriptif'], [/\bdébat\b/i,'texte'], [/\bambivalente\b/i,'contradictoire'], [/\bsubtile\b/i,'explicite'],
-    ['étudie','travaille'], ['étudier','travailler'], [/\bétudie\b/i,'travaille'], [/\bétudier\b/i,'travailler'], [/\bapprendre\b/i,'réviser'], [/\bparler\b/i,'écouter'], [/\bécouter\b/i,'répéter'], [/\bprogressser\b/i,'voyager'], [/\bprogresser\b/i,'voyager'], [/\bsommes sortis\b/i,'sommes restés'], [/\bsont sortis\b/i,'sont restés'], [/\best sorti\b/i,'est resté'], [/\bitalien\b/i,'français'], [/\bfrançais\b/i,'italien'], [/\bbibliothèque\b/i,'bureau'], [/\bclasse\b/i,'bureau'],
-    [/\bprès de la rivière\b/i,'près de la gare'], [/\bprès du lac\b/i,"près de l'école"], [/\bà la gare\b/i,'au bureau'], [/\bau travail\b/i,'à la maison'], [/\bà la maison\b/i,'au bureau'], [/\bdans la ville\b/i,'dans le village'],
-    [/\bce matin\b/i,'ce soir'], [/\baujourd’hui\b/i,'demain'], [/\bdemain\b/i,"la semaine prochaine"], [/\bcette semaine\b/i,'la semaine dernière'], [/\ble matin\b/i,'le soir'],
-    [/\bparce que\b/i,'même si'], [/\bmême si\b/i,'parce que'], [/\bcependant\b/i,'par conséquent'], [/\bpar conséquent\b/i,'cependant'], [/\bmalgré\b/i,'grâce à'], [/\bgrâce à\b/i,'à cause de'], [/\bà cause de\b/i,'grâce à'],
-    [/\bplus\b/i,'moins'], [/\bmoins\b/i,'plus'], [/\bmeilleur\b/i,'pire'], [/\bpire\b/i,'meilleur'], [/\btoujours\b/i,'rarement'], [/\bjamais\b/i,'souvent'],
-    [/\bla réunion\b/i,'le rendez-vous'], [/\ble rendez-vous\b/i,'la réunion'], [/\ble document\b/i,'le message'], [/\ble message\b/i,'le document'], [/\ble problème\b/i,'la solution'], [/\bla solution\b/i,'le problème'], [/\ble village\b/i,'la ville'], [/\bla ville\b/i,'le village'],
-    [/\bune question\b/i,'une réponse'], [/\bune réponse\b/i,'une question'], [/\ble téléphone\b/i,'le passeport'], [/\ble train\b/i,'le bus'], [/\ble bus\b/i,'le train']
-  ];
-  const candidates=[];
-  for(const [from,to] of rules){ const v=replaceFirstPhrase(fr,from,to); if(v) candidates.push(v); }
-  // More advanced distractors: alter stance, register, or logical relation while keeping the sentence close.
-  if(['B2','C1','C2'].includes(level)){
-    const advanced=[
-      [/\bil faut reconnaître que\b/i,'il faut nier que'], [/\ben revanche\b/i,'en effet'], [/\ben effet\b/i,'en revanche'], [/\btendance\b/i,'hypothèse'], [/\bauparavant\b/i,'récemment'], [/\bsous-estimée\b/i,'surestimée'], [/\bnuancé\b/i,'catégorique'], [/\bambigu\b/i,'explicite'], [/\bimplicitement\b/i,'explicitement'], [/\bcohérent\b/i,'contradictoire'], [/\bpertinent\b/i,'secondaire'], [/\bconvaincant\b/i,'fragile'], [/\bréfute\b/i,'confirme'], [/\bconfirme\b/i,'contredit'], [/\batténue\b/i,'renforce'], [/\brenforce\b/i,'atténue']
-    ];
-    for(const [from,to] of advanced){ const v=replaceFirstPhrase(fr,from,to); if(v) candidates.push(v); }
-  }
-  // Clause order distractor: meaningful but not wildly different.
-  if(fr.includes(', ')){
-    const parts=fr.split(', ');
-    if(parts.length===2) candidates.push(parts[1].charAt(0).toUpperCase()+parts[1].slice(1)+', '+parts[0].charAt(0).toLowerCase()+parts[0].slice(1));
-  }
-  return candidates;
-}
-function makeChoiceOptions(sentence,i,lesson){
-  const correct=String(sentence.fr || '').trim();
-  const normCorrect=normalizeAnswer(correct);
-  const pool=[];
-  const addPool = p => { if(p && p.fr && normalizeAnswer(p.fr)!==normCorrect) pool.push(String(p.fr).trim()); };
-  (lesson.practiceSentences||[]).forEach(addPool);
-  (lesson.sentences||[]).forEach(addPool);
-  function quality(candidate){
-    if(!candidate) return -1;
-    const n=normalizeAnswer(candidate);
-    if(n===normCorrect) return -1;
-    const a=tokenizeWords(correct).filter(t=>!/^[?.!,;:]$/.test(t));
-    const b=tokenizeWords(candidate).filter(t=>!/^[?.!,;:]$/.test(t));
-    if(!a.length || !b.length) return -1;
-    const aset=wordSet(a), bset=wordSet(b);
-    const common=[...aset].filter(x=>bset.has(x)).length;
-    const overlap=common/Math.max(aset.size,bset.size,1);
-    const removed=[...aset].filter(x=>!bset.has(x));
-    const added=[...bset].filter(x=>!aset.has(x));
-    if(!removed.length && !added.length) return -1;
-    const changedWords=removed.concat(added).filter(w=>w.length>=3);
-    const hasMeaningChange=changedWords.some(w=>w.length>=4);
-    if(!hasMeaningChange) return -1;
-    // Avoid options that are only one spelling letter away.
-    if(removed.length===1 && added.length===1 && lev(removed[0],added[0])<=2) return -1;
-    // Prefer options with shared structure but a meaningful lexical/grammar difference.
-    let target = ['A1','A2'].includes(state.level) ? 0.35 : ['B1','B2'].includes(state.level) ? 0.45 : 0.52;
-    const distancePenalty=Math.abs(overlap-target);
-    return 100 - distancePenalty*100 + Math.min(common,8)*2 - Math.abs(a.length-b.length)*2;
-  }
-  const unique=[];
-  const add = v => {
-    if(!v) return;
-    v=String(v).replace(/\s+([?.!,;:])/g,'$1').replace(/\s+/g,' ').trim();
-    if(normalizeAnswer(v)===normCorrect) return;
-    if(unique.some(x=>normalizeAnswer(x)===normalizeAnswer(v))) return;
-    if(quality(v)<0) return;
-    unique.push(v);
-  };
-  pool.sort((a,b)=>quality(b)-quality(a)).forEach(add);
-  const semantic=makeMeaningfulDistractors(correct);
-  semantic.forEach(add);
-  // Last resort: use other lesson sentences, still requiring unique and non-identical meaning.
-  if(unique.length<2){
-    const other = Object.values(DATA).flat().flatMap(l => (l.sentences||[]).map(s=>s.fr));
-    other.filter(x=>normalizeAnswer(x)!==normCorrect).slice(0,80).forEach(add);
-  }
-  // Absolute fallback with meaningful word swaps.
-  const loose = v => { if(v && normalizeAnswer(v)!==normCorrect && !unique.some(x=>normalizeAnswer(x)===normalizeAnswer(v))) unique.push(v); };
-  if(unique.length<2){
-    const swaps=[['la maison','le bureau'],['le bureau','la maison'],['la ville','le village'],['le village','la ville'],['le train','le bus'],['le bus','le train'],['la réunion','le rendez-vous'],['le rendez-vous','la réunion'],['aujourd’hui','demain'],['demain','aujourd’hui'],['simple','important'],['important','difficile'],['avant','après'],['après','avant']];
-    for(const [a,b] of swaps){ if(correct.toLowerCase().includes(a.toLowerCase())) loose(replaceFirstPhrase(correct,a,b)); if(unique.length>=2) break; }
-  }
-  const options=[correct,...unique.slice(0,2)];
-  while(options.length<3) options.push(correct + ' ' + (options.length===1?'maintenant':'ici'));
-  const order=[[0,1,2],[1,2,0],[2,0,1]][i%3] || [0,1,2];
-  return order.map(idx=>options[idx]);
-}
-function makeMeaningfulDistractors(fr){
-  const pairs=[
-    [/\ba compris\b/i,'a expliqué'],[/\bas compris\b/i,'as expliqué'],[/\bai compris\b/i,'ai expliqué'],[/\bavons compris\b/i,'avons expliqué'],[/\bont compris\b/i,'ont expliqué'],
-    [/\ba perdu\b/i,'a trouvé'],[/\bont perdu\b/i,'ont trouvé'],[/\bai perdu\b/i,'ai retrouvé'],
-    [/\ba attendu\b/i,'a demandé'],[/\bavons attendu\b/i,'avons demandé'],[/\bont attendu\b/i,'ont demandé'],
-    [/\bje suis\b/i,'je deviens'],[/\bnous sommes\b/i,'nous restons'],[/\bils sont\b/i,'ils restent'],[/\belle est\b/i,'elle devient'],[/\bil est\b/i,'il devient'],
-    [/\bj’ai\b/i,'je cherche'],[/\bnous avons\b/i,'nous cherchons'],[/\bils ont\b/i,'ils cherchent'],[/\belle a\b/i,'elle cherche'],[/\bil a\b/i,'il cherche'],
-    [/\bvais\b/i,'peux'],[/\bva\b/i,'peut'],[/\ballons\b/i,'pouvons'],[/\bvont\b/i,'peuvent'],
-    [/\bdevrais\b/i,'pourrais'],[/\bdevrait\b/i,'pourrait'],[/\bdevrions\b/i,'pourrions'],[/\bdevraient\b/i,'pourraient'],
-    [/\bparce que\b/i,'même si'],[/\bmême si\b/i,'parce que'],[/\bpendant\b/i,'avant'],[/\bavant\b/i,'après'],[/\baprès\b/i,'avant'],
-    [/\baujourd’hui\b/i,'demain'],[/\bdemain\b/i,'aujourd’hui'],[/\bhier\b/i,'demain'],[/\bla semaine prochaine\b/i,'le mois prochain'],
-    [/\bla maison\b/i,'le bureau'],[/\ble bureau\b/i,'la maison'],[/\bla ville\b/i,'le village'],[/\ble village\b/i,'la ville'],[/\ble train\b/i,'le bus'],[/\ble bus\b/i,'le train'],[/\bla gare\b/i,"l'hôtel"],[/\bl'hôtel\b/i,'la gare'],[/\bla réunion\b/i,'le rendez-vous'],[/\ble rendez-vous\b/i,'la réunion'],
-    [/\bimportant\b/i,'difficile'],[/\bdifficile\b/i,'utile'],[/\butile\b/i,'nécessaire'],[/\bsimple\b/i,'complexe'],[/\bclair\b/i,'précis'],[/\bprécis\b/i,'clair']
+    // High-priority close distractors: same topic, changed meaning or relationship
+    [/\bmet en évidence\b/i,'remet en question'], [/\btendance\b/i,'hypothèse'], [/\bauparavant\b/i,'récemment'], [/\bsous-estimée\b/i,'surestimée'],
+    [/\bcette conclusion\b/i,'cette hypothèse'], [/\bla conclusion\b/i,"l'hypothèse"], [/\bcontraintes locales\b/i,'préférences personnelles'], [/\bne tient pas compte\b/i,'tient compte'],
+    [/\bréaliste\b/i,'risquée'], [/\bambitieuse\b/i,'modeste'], [/\bcalendrier\b/i,'budget'],
+    [/\bpleuvait\b/i,'neigeait'], [/\bnous sommes sortis\b/i,'nous sommes restés'], [/\bils sont sortis\b/i,'ils sont restés'], [/\best sorti\b/i,'est resté'], [/\bpour progresser\b/i,'pour réussir'],
+    [/\bau bureau\b/i,'à la gare'], [/\bà la maison\b/i,'à l’école'], [/\bitalien\b/i,'français'], [/\bitalien\b/i,'espagnol'], [/\bfrançais\b/i,'italien'], [/\bvillage\b/i,'quartier'], [/\bexercice\b/i,'cours'],
+    [/\bn’est pas\b/i,'est'], [/\bne sont pas\b/i,'sont'], [/\bne comprends pas\b/i,'comprends'], [/\bpas fatigué\b/i,'occupé'], [/\bfatigué\b/i,'occupé'], [/\bfatiguée\b/i,'occupée'],
+    [/\bgrande\b/i,'petite'], [/\bgrand\b/i,'petit'], [/\bpetite\b/i,'grande'], [/\bpetit\b/i,'grand'], [/\bsimple\b/i,'difficile'], [/\bdifficile\b/i,'simple'],
+    [/\bdix\b/i,'vingt'], [/\bvingt\b/i,'dix'], [/\btrente\b/i,'quarante'], [/\bquarante\b/i,'trente'], [/\beuros\b/i,'minutes'], [/\bans\b/i,'euros'],
+    [/\bun stylo\b/i,'un livre'], [/\bun cahier\b/i,'un stylo'], [/\bun ami\b/i,'un voisin'], [/\bla famille\b/i,'l’équipe'], [/\bma famille\b/i,'mon équipe'],
+
+
+    // verbs and verbal structures: same frame, different action
+    [/\bje travaille\b/i,'je participe'], [/\bnous travaillons\b/i,'nous participons'], [/\bil travaille\b/i,'il participe'], [/\belle travaille\b/i,'elle participe'], [/\bils travaillent\b/i,'ils participent'],
+    [/\bje coordonne\b/i,'je consulte'], [/\bnous coordonnons\b/i,'nous consultons'], [/\bil coordonne\b/i,'il consulte'], [/\belle coordonne\b/i,'elle consulte'],
+    [/\bje comprends\b/i,"j'explique"], [/\btu comprends\b/i,'tu expliques'], [/\bil comprend\b/i,'il explique'], [/\belle comprend\b/i,'elle explique'], [/\bnous comprenons\b/i,'nous expliquons'], [/\bils comprennent\b/i,'ils expliquent'],
+    [/\bje prends en compte\b/i,'je mets de côté'], [/\bnous prenons en compte\b/i,'nous mettons de côté'], [/\bils prennent en compte\b/i,'ils mettent de côté'], [/\bprendre en compte\b/i,'mettre de côté'],
+    [/\bje mets en place\b/i,'je modifie'], [/\bnous mettons en place\b/i,'nous modifions'], [/\bils mettent en place\b/i,'ils modifient'], [/\bmettre en place\b/i,'modifier'],
+    [/\bj[’']ai perdu\b/i,"j'ai retrouvé"], [/\bil a perdu\b/i,'il a retrouvé'], [/\belle a perdu\b/i,'elle a retrouvé'], [/\bnous avons perdu\b/i,'nous avons retrouvé'], [/\bils ont perdu\b/i,'ils ont retrouvé'],
+    [/\bj[’']ai compris\b/i,"j'ai expliqué"], [/\bas-tu compris\b/i,'as-tu expliqué'], [/\ba compris\b/i,'a expliqué'], [/\bavons compris\b/i,'avons expliqué'], [/\bont compris\b/i,'ont expliqué'],
+    [/\ba attendu\b/i,'a demandé'], [/\bavons attendu\b/i,'avons demandé'], [/\bont attendu\b/i,'ont demandé'],
+    [/\ba commencé\b/i,'a terminé'], [/\bavons commencé\b/i,'avons terminé'], [/\bont commencé\b/i,'ont terminé'],
+    [/\ba acheté\b/i,'a vendu'], [/\bavons acheté\b/i,'avons vendu'], [/\bont acheté\b/i,'ont vendu'],
+    [/\ba choisi\b/i,'a refusé'], [/\bavons choisi\b/i,'avons refusé'], [/\bont choisi\b/i,'ont refusé'],
+    [/\bje vais\b/i,'je peux'], [/\btu vas\b/i,'tu peux'], [/\bil va\b/i,'il peut'], [/\belle va\b/i,'elle peut'], [/\bnous allons\b/i,'nous pouvons'], [/\bils vont\b/i,'ils peuvent'],
+    [/\bje peux\b/i,'je dois'], [/\btu peux\b/i,'tu dois'], [/\bil peut\b/i,'il doit'], [/\belle peut\b/i,'elle doit'], [/\bnous pouvons\b/i,'nous devons'], [/\bils peuvent\b/i,'ils doivent'],
+    [/\bje devrais\b/i,'je pourrais'], [/\btu devrais\b/i,'tu pourrais'], [/\bil devrait\b/i,'il pourrait'], [/\bnous devrions\b/i,'nous pourrions'], [/\bils devraient\b/i,'ils pourraient'],
+    // connectors: same ideas, different relationship
+    [/\bmais\b/i,'donc'], [/\bdonc\b/i,'mais'], [/\bcependant\b/i,'par conséquent'], [/\bpar conséquent\b/i,'cependant'], [/\bparce que\b/i,'même si'], [/\bmême si\b/i,'parce que'], [/\bbien que\b/i,'malgré le fait que'], [/\bgrâce à\b/i,'à cause de'], [/\bà cause de\b/i,'grâce à'], [/\bmalgré\b/i,'grâce à'],
+    [/\bavant de\b/i,'après avoir'], [/\baprès avoir\b/i,'avant d’avoir'], [/\bavant\b/i,'après'], [/\baprès\b/i,'avant'], [/\bpendant\b/i,'après'],
+    // time/context: same event, wrong time or setting
+    [/\baujourd[’']hui\b/i,'demain'], [/\bdemain\b/i,"aujourd'hui"], [/\bhier\b/i,'demain'], [/\bce matin\b/i,'ce soir'], [/\bce soir\b/i,'ce matin'], [/\bcette semaine\b/i,'la semaine prochaine'], [/\bla semaine prochaine\b/i,'cette semaine'], [/\ble mois prochain\b/i,'la semaine prochaine'],
+    [/\bau travail\b/i,'à la maison'], [/\bà la maison\b/i,'au travail'], [/\bau bureau\b/i,'à la gare'], [/\bà la gare\b/i,'au bureau'], [/\ben classe\b/i,'au bureau'], [/\bdans cette ville\b/i,'dans ce village'], [/\bdans la ville\b/i,'dans le village'], [/\bdans le village\b/i,'dans la ville'],
+    // nouns and objects: same domain, wrong object
+    [/\ben veux-tu\b/i,'en prends-tu'], [/\boù habites-tu\b/i,'où travailles-tu'], [/\bhabites-tu\b/i,'travailles-tu'],
+    [/\bque veux-tu\b/i,'que cherches-tu'], [/\bveux-tu\b/i,'préfères-tu'], [/\bvoudriez-vous\b/i,'prendriez-vous'], [/\bun thé\b/i,'un café'], [/\bdu café\b/i,'du thé'], [/\bquel cahier\b/i,'quel livre'], [/\bpréfères-tu\b/i,'choisis-tu'], [/\ble connais-tu\b/i,'le vois-tu'],
+    [/\baimes-tu\b/i,'comprends-tu'], [/\bcomprends-tu\b/i,'aimes-tu'], [/\bcombien ça coûte\b/i,'combien ça dure'], [/\bça coûte\b/i,'ça dure'], [/\boù est\b/i,'comment est'], [/\bqui est\b/i,'où est'], [/\bquand\b/i,'pourquoi'], [/\bpourquoi\b/i,'quand'],
+    [/\bitalien\b/i,'français'], [/\bitalien\b/i,'espagnol'], [/\bfrançais\b/i,'italien'], [/\bespagnol\b/i,'italien'], [/\ballemand\b/i,'français'], [/\bitalienne\b/i,'française'], [/\bfrançaise\b/i,'italienne'],
+    [/\bun stylo\b/i,'un cahier'], [/\ble stylo\b/i,'le cahier'], [/\bun cahier\b/i,'un livre'], [/\ble cahier\b/i,'le livre'], [/\bun livre\b/i,'un stylo'], [/\ble livre\b/i,'le stylo'],
+    [/\bcet exercice\b/i,'ce cours'], [/\bl[’']exercice\b/i,'le cours'], [/\bce cours\b/i,'cet exercice'], [/\bla classe\b/i,'le bureau'], [/\bsalle de classe\b/i,'bureau'], [/\bau bureau\b/i,'en classe'], [/\bà l’école\b/i,'au bureau'],
+    [/\bà la maison\b/i,'à l’école'], [/\bce matin\b/i,'ce soir'], [/\bce soir\b/i,'ce matin'], [/\btrès calme\b/i,'très fatigué'], [/\btrès fatigué\b/i,'très calme'], [/\bcontents\b/i,'fatigués'], [/\bprêt\b/i,'occupé'],
+    [/\bprès de la gare\b/i,'près du parc'], [/\bprès du parc\b/i,'près de la gare'], [/\bau marché\b/i,'au musée'], [/\bau musée\b/i,'au marché'],
+    [/\bce projet\b/i,'ce programme'], [/\ble projet\b/i,'le programme'], [/\bun projet\b/i,'un programme'], [/\bdes partenaires\b/i,'des collègues'], [/\bplusieurs partenaires\b/i,'plusieurs collègues'], [/\bl[’']équipe\b/i,'le service'], [/\bla réunion\b/i,'le rendez-vous'], [/\ble rendez-vous\b/i,'la réunion'],
+    [/\bla question\b/i,'la réponse'], [/\bune question\b/i,'une réponse'], [/\bla réponse\b/i,'la question'], [/\ble problème\b/i,'la solution'], [/\bun problème\b/i,'une solution'], [/\bla solution\b/i,'le problème'],
+    [/\bdes données\b/i,'des informations'], [/\bles données\b/i,'les informations'], [/\bles informations\b/i,'les documents'], [/\ble document\b/i,'le message'], [/\bun document\b/i,'un message'], [/\ble message\b/i,'le document'],
+    [/\ble contexte local\b/i,'le budget disponible'], [/\bcontexte local\b/i,'budget disponible'], [/\bla décision\b/i,'la discussion'], [/\bune décision\b/i,'une discussion'],
+    [/\bla ville\b/i,'la région'], [/\ble village\b/i,'le quartier'], [/\bla maison\b/i,'l’école'], [/\ble bureau\b/i,'la maison'], [/\ble train\b/i,'le bus'], [/\ble bus\b/i,'le train'], [/\ble téléphone\b/i,'le passeport'], [/\ble passeport\b/i,'le téléphone'],
+    // adjectives/adverbs/register: same topic, wrong nuance
+    [/\btendance\b/i,'hypothèse'], [/\bhypothèse\b/i,'tendance'], [/\bauparavant\b/i,'récemment'], [/\brécemment\b/i,'auparavant'], [/\bsous-estimée\b/i,'surestimée'], [/\bsurestimée\b/i,'sous-estimée'],
+    [/\bréaliste\b/i,'risquée'], [/\brisquée\b/i,'réaliste'], [/\bambitieuse\b/i,'modeste'], [/\bmodeste\b/i,'ambitieuse'], [/\ble calendrier\b/i,'le budget'], [/\ble budget\b/i,'le calendrier'], [/\bla conclusion\b/i,"l'hypothèse"], [/\bl'hypothèse\b/i,'la conclusion'],
+    [/\bne tient pas compte\b/i,'ignore partiellement'], [/\bprend en compte\b/i,'ignore partiellement'], [/\bprès du lac\b/i,'près de la gare'], [/\bpetite ville\b/i,'grande ville'], [/\ble village\b/i,'le quartier'], [/\bce village\b/i,'ce quartier'], [/\bla ville\b/i,'la région'],
+    [/\btous les jours\b/i,'chaque soir'], [/\bchaque jour\b/i,'chaque semaine'], [/\bpour progresser\b/i,'pour voyager'],
+    [/\bimportant\b/i,'utile'], [/\butile\b/i,'nécessaire'], [/\bnécessaire\b/i,'possible'], [/\bsuffisant\b/i,'convaincant'], [/\bclair\b/i,'précis'], [/\bprécis\b/i,'clair'], [/\bcomplet\b/i,'partiel'], [/\bpartiel\b/i,'complet'], [/\bpublic\b/i,'privé'], [/\bprivé\b/i,'public'],
+    [/\bsouvent\b/i,'rarement'], [/\brarement\b/i,'souvent'], [/\btoujours\b/i,'parfois'], [/\bparfois\b/i,'toujours'], [/\bseulement\b/i,'également'], [/\bégalement\b/i,'seulement'],
+    // advanced nuance
+    [/\bil faut reconnaître que\b/i,'il faut supposer que'], [/\bil convient de\b/i,'il suffit de'], [/\bon ne saurait\b/i,'on pourrait'], [/\bimplicitement\b/i,'explicitement'], [/\bexplicitement\b/i,'implicitement'], [/\bambigu\b/i,'catégorique'], [/\bcatégorique\b/i,'nuancé'], [/\bnuancé\b/i,'catégorique'], [/\bcohérent\b/i,'contradictoire'], [/\bcontradictoire\b/i,'cohérent'], [/\bconvaincant\b/i,'fragile'], [/\bfragile\b/i,'convaincant'], [/\batténue\b/i,'renforce'], [/\brenforce\b/i,'atténue'], [/\bconfirme\b/i,'contredit'], [/\bcontredit\b/i,'confirme'], [/\bréfute\b/i,'confirme']
   ];
   const out=[];
-  for(const [re,to] of pairs){ if(re.test(fr)){ out.push(fr.replace(re,to)); if(out.length>=6) break; } }
+  for(const [from,to] of rules){
+    const v=replaceFirstPhrase(fr,from,to);
+    if(v && optionQuality(fr,v,level)>=0) out.push(v);
+  }
+  // High-level alternatives: alter stance or logical force while keeping vocabulary frame.
+  if(['B2','C1','C2'].includes(level)){
+    const adv=[
+      [/\bil montre que\b/i,'il suggère que'], [/\bil suggère que\b/i,'il démontre que'], [/\bnous devons\b/i,'nous pourrions'], [/\bnous pourrions\b/i,'nous devrions'], [/\bcette analyse\b/i,'cette hypothèse'], [/\bcette hypothèse\b/i,'cette analyse'], [/\ble raisonnement\b/i,"l'exemple"], [/\bl[’']argument\b/i,"l'exemple"], [/\bla conclusion\b/i,"l'hypothèse"]
+    ];
+    for(const [from,to] of adv){ const v=replaceFirstPhrase(fr,from,to); if(v && optionQuality(fr,v,level)>=0) out.push(v); }
+  }
   return out;
+}
+function makeMeaningfulDistractors(fr){ return makeDistractorCandidates(fr,state.level || 'B1'); }
+function makeChoiceOptions(sentence,i,lesson){
+  const correct=String(sentence.fr || '').replace(/\s+([?.!,;:])/g,'$1').replace(/\s+/g,' ').trim();
+  const level=(state && state.level) || 'B1';
+  const candidates=makeDistractorCandidates(correct,level)
+    .map(v=>String(v).replace(/\s+([?.!,;:])/g,'$1').replace(/\s+/g,' ').trim())
+    .filter(v=>optionQuality(correct,v,level)>=0)
+    .sort((a,b)=>optionQuality(correct,b,level)-optionQuality(correct,a,level));
+  const chosen=[];
+  const signatures=[];
+  for(const cand of candidates){
+    if(chosen.some(x=>normalizeAnswer(x)===normalizeAnswer(cand))) continue;
+    const sig=changedSignature(correct,cand);
+    if(signatures.some(s=>s===sig)) continue;
+    // Avoid two distractors that are almost the same as each other.
+    chosen.push(cand); signatures.push(sig);
+    if(chosen.length>=2) break;
+  }
+  // Tight fallback: keep the same topic/frame and change one meaningful element.
+  const fallbacks=[
+    [/au bureau/i,'à la gare'], [/à la maison/i,'à l’école'], [/à l’école/i,'au bureau'], [/en classe/i,'au bureau'],
+    [/ce matin/i,'ce soir'], [/ce soir/i,'ce matin'], [/aujourd’hui/i,'demain'], [/demain/i,'aujourd’hui'],
+    [/italien/i,'français'], [/français/i,'italien'], [/village/i,'quartier'], [/ville/i,'région'],
+    [/exercice/i,'cours'], [/cours/i,'exercice'], [/question/i,'réponse'], [/réponse/i,'question'],
+    [/café/i,'thé'], [/thé/i,'café'], [/stylo/i,'cahier'], [/cahier/i,'livre'],
+    [/mais/i,'donc'], [/donc/i,'mais'], [/avec/i,'sans'], [/pour/i,'contre'],
+    [/est/i,'devient'], [/sont/i,'restent'], [/a/i,'cherche'], [/ont/i,'cherchent'], [/vas-tu/i,'dois-tu'], [/réponds-tu/i,'écris-tu']
+  ];
+  for(const [from,to] of fallbacks){
+    if(chosen.length>=2) break;
+    const v=replaceFirstPhrase(correct,from,to);
+    if(v && normalizeAnswer(v)!==normalizeAnswer(correct) && !chosen.some(x=>normalizeAnswer(x)===normalizeAnswer(v))) chosen.push(v);
+  }
+  while(chosen.length<2){
+    let v = chosen.length===0 ? correct.replace(/très/i,'assez') : correct.replace(/mon/i,'ton').replace(/ma/i,'ta').replace(/mes/i,'tes');
+    if(v && normalizeAnswer(v)!==normalizeAnswer(correct) && !chosen.some(x=>normalizeAnswer(x)===normalizeAnswer(v))) chosen.push(v); else chosen.push(correct.replace(/([?.!])$/, chosen.length===0?' à un autre moment$1':' avec une autre priorité$1'));
+  }
+  const options=[correct,chosen[0],chosen[1]];
+  const order=[[0,1,2],[1,2,0],[2,0,1]][i%3] || [0,1,2];
+  return order.map(idx=>options[idx]);
 }
 function splitTokens(fr){ return fr.replace(/([?.!,;:])/g,' $1').split(/\s+/).filter(Boolean); }
 function makeWordOrderQuestion(fr,i){ return splitTokens(fr).map((word,idx)=>({word,id:`${i}-${idx}-${word}`})).sort(()=>Math.random()-0.5); }
